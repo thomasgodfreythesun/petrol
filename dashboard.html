@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fuel Prices</title>
+<title>UK Fuel Price Monitor</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -155,6 +155,19 @@
   .price-low  { color: #3a7a3a; }
   .price-null { color: #bbb; }
 
+  .pct-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+  }
+  .pct-up   { color: #b94040; }
+  .pct-down { color: #3a7a3a; }
+  .pct-flat { color: #999; }
+
   .station-name { font-weight: 500; }
   .station-brand {
     font-size: 11px;
@@ -250,6 +263,43 @@
   }
   .notice strong { display: block; font-size: 16px; color: #555; margin-bottom: 8px; }
 
+  .nearby-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .nearby-wrap input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc7bc;
+    background: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    width: 180px;
+    outline: none;
+  }
+  .nearby-wrap input[type="text"]:focus { border-color: #1a1a1a; }
+  .nearby-wrap button {
+    padding: 8px 14px;
+    background: #1a1a1a;
+    color: #f5f0e8;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .nearby-wrap button:disabled { opacity: 0.5; cursor: default; }
+  .nearby-wrap button.clear-btn {
+    background: none;
+    color: #888;
+    border: 1px solid #ccc7bc;
+    padding: 7px 10px;
+  }
+  .nearby-wrap button.clear-btn:hover { color: #1a1a1a; border-color: #1a1a1a; }
+  .nearby-status { font-size: 12px; color: #888; }
+  .nearby-status.error { color: #b94040; }
+
   /* ---- Pagination ---- */
   .pagination {
     display: flex;
@@ -275,7 +325,7 @@
 <body>
 
 <header>
-  <h1>Fuel Prices</h1>
+  <h1>UK Fuel Price Monitor</h1>
   <span id="last-updated">Loading...</span>
 </header>
 
@@ -306,13 +356,20 @@
         <option value="B7-asc">Diesel: lowest first</option>
         <option value="E10-desc">Petrol: highest first</option>
         <option value="E10-asc">Petrol: lowest first</option>
-        <option value="last_updated-desc">Last updated: newest first</option>
-        <option value="last_updated-asc">Last updated: oldest first</option>
         <option value="name-asc">Name A–Z</option>
         <option value="county-asc">County A–Z</option>
       </select>
 
       <span class="count-label" id="count-label"></span>
+    </div>
+
+    <div class="nearby-wrap" style="margin-bottom:16px">
+      <input type="text" id="nearby-postcode" placeholder="Your postcode (e.g. SW1A 1AA)"
+             maxlength="8" oninput="onNearbyInput()"
+             onkeydown="if(event.key==='Enter') applyNearbyFilter()">
+      <button id="nearby-btn" onclick="applyNearbyFilter()">Find within 10 miles</button>
+      <button class="clear-btn" id="nearby-clear" onclick="clearNearby()" style="display:none">✕ Clear</button>
+      <span class="nearby-status" id="nearby-status"></span>
     </div>
 
     <div class="table-wrap">
@@ -324,7 +381,6 @@
             <th onclick="sortBy('postcode')">Postcode <span class="sort-arrow">↕</span></th>
             <th onclick="sortBy('E10')">Petrol E10 <span class="sort-arrow">↕</span></th>
             <th onclick="sortBy('B7')">Diesel B7 <span class="sort-arrow">↕</span></th>
-            <th onclick="sortBy('last_updated')">Last Updated <span class="sort-arrow">↕</span></th>
           </tr>
         </thead>
         <tbody id="stations-body"></tbody>
@@ -357,6 +413,9 @@ let sortField = 'B7';
 let sortDir = 'desc';
 let page = 1;
 const PER_PAGE = 100;
+let nearbyMode = false;
+let userCoords = null;
+const NEARBY_MILES = 10;
 
 // ---- Load data ----
 async function loadData() {
@@ -368,7 +427,7 @@ async function loadData() {
   } catch (e) {
     document.getElementById('last-updated').textContent = 'Failed to load fuel_data.json';
     document.getElementById('stations-body').innerHTML =
-      '<tr><td colspan="6"><div class="notice"><strong>Could not load data</strong>Make sure fuel_data.json is in the same folder as this HTML file and you have run the Python script at least once.</div></td></tr>';
+      '<tr><td colspan="5"><div class="notice"><strong>Could not load data</strong>Make sure fuel_data.json is in the same folder as this HTML file and you have run the Python script at least once.</div></td></tr>';
   }
 }
 
@@ -376,7 +435,7 @@ function init() {
   const d = new Date(allData.generated_at);
   document.getElementById('last-updated').textContent =
     'Updated ' + d.toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}) +
-    ' at ' + d.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'}) + ' ';
+    ' at ' + d.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'}) + ' UTC';
 
   // Populate county filter dropdown
   const sel = document.getElementById('county-filter');
@@ -389,6 +448,66 @@ function init() {
 
   applyFilters();
   renderCounties();
+}
+
+// ---- Nearby filter ----
+function haversineMiles(lat1, lon1, lat2, lon2) {
+  const R = 3958.8;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) ** 2 +
+            Math.cos(lat1 * Math.PI / 180) *
+            Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLon/2) ** 2;
+  return R * 2 * Math.asin(Math.sqrt(a));
+}
+
+function onNearbyInput() {
+  const val = document.getElementById('nearby-postcode').value.trim();
+  if (!val) clearNearby();
+}
+
+function clearNearby() {
+  nearbyMode = false;
+  userCoords = null;
+  document.getElementById('nearby-postcode').value = '';
+  document.getElementById('nearby-status').textContent = '';
+  document.getElementById('nearby-status').className = 'nearby-status';
+  document.getElementById('nearby-clear').style.display = 'none';
+  applyFilters();
+}
+
+async function applyNearbyFilter() {
+  const pc = document.getElementById('nearby-postcode').value.trim().replace(/\s+/g, '');
+  const btn = document.getElementById('nearby-btn');
+  const status = document.getElementById('nearby-status');
+
+  if (!pc) { clearNearby(); return; }
+
+  btn.disabled = true;
+  status.className = 'nearby-status';
+  status.textContent = 'Looking up postcode…';
+
+  try {
+    const res = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(pc)}`);
+    const data = await res.json();
+    if (data.status !== 200) throw new Error('Postcode not found');
+
+    userCoords = { lat: data.result.latitude, lng: data.result.longitude };
+    nearbyMode = true;
+    status.textContent = '';
+    document.getElementById('nearby-clear').style.display = '';
+    applyFilters();
+
+    const n = filtered.length;
+    status.textContent = `${n} station${n !== 1 ? 's' : ''} within ${NEARBY_MILES} miles`;
+  } catch (e) {
+    status.className = 'nearby-status error';
+    status.textContent = 'Postcode not found — please check and try again.';
+    nearbyMode = false;
+  } finally {
+    btn.disabled = false;
+  }
 }
 
 // ---- Filtering & sorting ----
@@ -404,6 +523,10 @@ function applyFilters() {
     if (fuelMode === 'E10' && s.E10 === null) return false;
     if (fuelMode === 'B7'  && s.B7  === null) return false;
     if (county && s.county !== county) return false;
+    if (nearbyMode && userCoords) {
+      if (s.lat == null || s.lng == null) return false;
+      if (haversineMiles(userCoords.lat, userCoords.lng, s.lat, s.lng) > NEARBY_MILES) return false;
+    }
     if (q) {
       const hay = (s.name + ' ' + s.town + ' ' + s.postcode + ' ' + s.brand + ' ' + s.county).toLowerCase();
       if (!hay.includes(q)) return false;
@@ -477,19 +600,13 @@ function fmtPrice(p) {
   return p.toFixed(1) + 'p';
 }
 
-function fmtTimestamp(iso) {
-  if (!iso) return '<span class="price-null">—</span>';
-  const d = new Date(iso);
-  const diffMs = Date.now() - d.getTime();
-  const diffH = diffMs / 36e5;
-  if (diffH < 1) {
-    const diffM = Math.round(diffMs / 60000);
-    return `<span title="${iso}">${diffM}m ago</span>`;
-  }
-  if (diffH < 36) {
-    return `<span title="${iso}">${Math.round(diffH)}h ago</span>`;
-  }
-  return `<span title="${iso}">${d.toLocaleDateString('en-GB', {day:'numeric',month:'short'})}</span>`;
+function pctBadge(current, baselineNode, fuel) {
+  if (current === null || !baselineNode || baselineNode[fuel] == null) return '';
+  const base = baselineNode[fuel];
+  const diff = ((current - base) / base) * 100;
+  const sign = diff > 0 ? '+' : '';
+  const cls  = diff > 0.05 ? 'pct-up' : diff < -0.05 ? 'pct-down' : 'pct-flat';
+  return `<span class="pct-badge ${cls}">${sign}${diff.toFixed(1)}%</span>`;
 }
 
 function renderTable() {
@@ -502,14 +619,17 @@ function renderTable() {
   const b7s  = filtered.map(s => s.B7);
 
   if (!slice.length) {
-    body.innerHTML = '<tr><td colspan="6"><div class="notice"><strong>No stations found</strong>Try adjusting your filters.</div></td></tr>';
+    body.innerHTML = '<tr><td colspan="5"><div class="notice"><strong>No stations found</strong>Try adjusting your filters.</div></td></tr>';
     renderPagination();
     return;
   }
 
+  const baseline = allData.baseline || {};
+
   body.innerHTML = slice.map(s => {
     const pc  = priceClass(s.E10, e10s);
     const pcd = priceClass(s.B7, b7s);
+    const bl  = baseline[s.node_id] || null;
     return `<tr>
       <td>
         <div class="station-name">${esc(s.name)}</div>
@@ -517,15 +637,14 @@ function renderTable() {
       </td>
       <td>${esc(s.county)}</td>
       <td><span class="postcode-badge">${esc(s.postcode)}</span>${s.town ? '<br><span style="color:#888;font-size:11px">' + esc(s.town) + '</span>' : ''}</td>
-      <td class="price-cell ${pc}">${fmtPrice(s.E10)}</td>
-      <td class="price-cell ${pcd}">${fmtPrice(s.B7)}</td>
-      <td class="price-cell" style="color:#666;white-space:nowrap">${fmtTimestamp(s.last_updated)}</td>
+      <td class="price-cell ${pc}">${fmtPrice(s.E10)}${pctBadge(s.E10, bl, 'E10')}</td>
+      <td class="price-cell ${pcd}">${fmtPrice(s.B7)}${pctBadge(s.B7, bl, 'B7')}</td>
     </tr>`;
   }).join('');
 
   // Highlight sorted column
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
-  const fields = ['name','county','postcode','E10','B7','last_updated'];
+  const fields = ['name','county','postcode','E10','B7'];
   const idx = fields.indexOf(sortField);
   if (idx >= 0) document.querySelectorAll('thead th')[idx].classList.add('sorted');
 
