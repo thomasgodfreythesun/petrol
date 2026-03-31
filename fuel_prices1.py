@@ -25,6 +25,8 @@ from pathlib import Path
 from typing import Optional
 
 import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 FUEL_CLIENT_ID     = os.environ.get("FUEL_CLIENT_ID", "")
 FUEL_CLIENT_SECRET = os.environ.get("FUEL_CLIENT_SECRET", "")
@@ -47,6 +49,9 @@ RATE_DELAY    = 2.0
 TOKEN_SKEW    = 30
 TIMEOUT       = 60
 CUTOFF_HOURS  = 36          # only include stations updated within this window
+
+POSTCODES_IO_URL = "https://api.postcodes.io/postcodes"
+GEO_BATCH_SIZE   = 100      # postcodes.io bulk endpoint limit
 
 POSTCODE_COUNTY = {
     "AB": "Aberdeenshire",         "AL": "Hertfordshire",
@@ -262,6 +267,41 @@ def parse_price(val) -> Optional[float]:
     return round(n if n > 10 else n * 100, 2)
 
 
+def geocode_postcodes(postcodes: list) -> dict:
+    """
+    Bulk-geocode a list of UK postcodes via postcodes.io (no API key needed).
+    Returns a dict mapping postcode -> (lat, lng), skipping any that fail.
+    """
+    coords: dict = {}
+    unique = list({p.strip().upper() for p in postcodes if p and p.strip()})
+    total  = len(unique)
+    log.info("Geocoding %d unique postcodes via postcodes.io...", total)
+
+    for i in range(0, total, GEO_BATCH_SIZE):
+        batch = unique[i : i + GEO_BATCH_SIZE]
+        try:
+            resp = requests.post(
+                POSTCODES_IO_URL,
+                json={"postcodes": batch},
+                headers={"Content-Type": "application/json", "Accept": "application/json"},
+                timeout=TIMEOUT,
+                verify=False,
+            )
+            resp.raise_for_status()
+            for item in resp.json().get("result") or []:
+                r = item.get("result")
+                if r and r.get("latitude") is not None:
+                    coords[item["query"].strip().upper()] = (r["latitude"], r["longitude"])
+        except Exception as exc:
+            log.warning("Geocode batch %d-%d failed: %s", i, i + GEO_BATCH_SIZE, exc)
+
+        if i + GEO_BATCH_SIZE < total:
+            time.sleep(0.5)   # be polite to the free API
+
+    log.info("Geocoded %d/%d postcodes successfully", len(coords), total)
+    return coords
+
+
 def build_station_index(stations_raw: list) -> dict:
     index: dict = {}
     for s in stations_raw:
@@ -287,6 +327,8 @@ def build_station_index(stations_raw: list) -> dict:
             "address":      address,
             "town":         town,
             "county":       county or "Unknown",
+            "lat":          None,
+            "lng":          None,
             "E10":          None,
             "B7":           None,
             "last_updated": None,   # ISO timestamp of most recent price change
@@ -341,22 +383,15 @@ def apply_prices(index: dict, prices_raw: list) -> None:
                         index[node_id]["last_updated"] = ts
 
 
+
 def build_output(index: dict) -> dict:
     """
     Output structure consumed by dashboard.html:
     {
       "generated_at": "2026-03-31T10:00:00Z",
       "total_stations": 7561,
-      "stations": [ { node_id, name, brand, postcode, address, town, county, E10, B7 }, ... ],
-      "county_summary": {
-        "Greater London": {
-          "station_count": 412,
-          "avg_E10": 148.2,
-          "avg_B7": 155.1,
-          "most_expensive_E10": { ...station... },
-          "most_expensive_B7":  { ...station... }
-        }, ...
-      }
+      "stations": [ { node_id, name, brand, postcode, address, town, county, lat, lng, E10, B7 }, ... ],
+      "county_summary": { ... }
     }
     """
     stations = list(index.values())
@@ -427,6 +462,15 @@ def main() -> None:
 
     log.info("=== Building output ===")
     index = build_station_index(stations_raw)
+
+    # Geocode all station postcodes and attach lat/lng
+    all_postcodes = [s["postcode"] for s in index.values() if s["postcode"]]
+    coords_map = geocode_postcodes(all_postcodes)
+    for s in index.values():
+        pc = s["postcode"].strip().upper()
+        if pc in coords_map:
+            s["lat"], s["lng"] = coords_map[pc]
+
     apply_prices(index, prices_raw)
 
     with_e10 = sum(1 for s in index.values() if s["E10"] is not None)
