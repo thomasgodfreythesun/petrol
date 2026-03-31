@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Prices</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: #f5f0e8;
+    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ---- Header ---- */
+  header {
+    background: #1a1a1a;
+    color: #f5f0e8;
+    padding: 20px 32px;
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  #last-updated {
+    font-size: 12px;
+    color: #999;
+    margin-left: auto;
+  }
+
+  /* ---- Layout ---- */
+  .container { max-width: 1280px; margin: 0 auto; padding: 24px 32px; }
+
+  /* ---- Controls ---- */
+  .controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+  .controls input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc7bc;
+    background: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    width: 260px;
+    outline: none;
+  }
+  .controls input[type="text"]:focus { border-color: #1a1a1a; }
+
+  .controls select {
+    padding: 8px 12px;
+    border: 1px solid #ccc7bc;
+    background: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+  }
+  .controls select:focus { border-color: #1a1a1a; }
+
+  .fuel-toggle {
+    display: flex;
+    border: 1px solid #ccc7bc;
+    overflow: hidden;
+  }
+  .fuel-toggle button {
+    padding: 8px 16px;
+    background: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    color: #666;
+    border-right: 1px solid #ccc7bc;
+  }
+  .fuel-toggle button:last-child { border-right: none; }
+  .fuel-toggle button.active {
+    background: #1a1a1a;
+    color: #f5f0e8;
+  }
+
+  .count-label {
+    margin-left: auto;
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  /* ---- Tabs ---- */
+  .tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 24px;
+  }
+  .tabs button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    color: #777;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+  .tabs button.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 600; }
+
+  /* ---- Station table ---- */
+  .table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    text-align: left;
+    padding: 10px 12px;
+    background: #ede8de;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #555;
+    border-bottom: 1px solid #ccc7bc;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: #1a1a1a; }
+  thead th .sort-arrow { margin-left: 4px; color: #bbb; }
+  thead th.sorted .sort-arrow { color: #1a1a1a; }
+
+  tbody tr { border-bottom: 1px solid #e8e2d8; }
+  tbody tr:hover { background: #ede8de; }
+  tbody td { padding: 9px 12px; vertical-align: middle; }
+
+  .price-cell {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .price-high { color: #b94040; }
+  .price-mid  { color: #1a1a1a; }
+  .price-low  { color: #3a7a3a; }
+  .price-null { color: #bbb; }
+
+  .station-name { font-weight: 500; }
+  .station-brand {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .postcode-badge {
+    display: inline-block;
+    background: #ede8de;
+    border: 1px solid #ccc7bc;
+    padding: 1px 6px;
+    font-size: 11px;
+    color: #555;
+    font-family: monospace;
+  }
+
+  /* ---- County summary table ---- */
+  .county-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1px;
+    background: #ccc7bc;
+    border: 1px solid #ccc7bc;
+  }
+  .county-card {
+    background: #faf7f2;
+    padding: 16px;
+  }
+  .county-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .county-card h3 span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #888;
+  }
+  .county-avgs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .county-avg-item {
+    flex: 1;
+    background: #ede8de;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .county-avg-item .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .county-avg-item .val {
+    font-size: 18px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .county-avg-item .val small { font-size: 11px; font-weight: 400; color: #888; }
+
+  .most-exp-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .most-exp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 1px solid #e8e2d8;
+    font-size: 12px;
+  }
+  .most-exp-row .mname { color: #1a1a1a; }
+  .most-exp-row .mprice { font-weight: 600; color: #b94040; }
+
+  /* ---- Empty / loading ---- */
+  .notice {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    font-size: 14px;
+  }
+  .notice strong { display: block; font-size: 16px; color: #555; margin-bottom: 8px; }
+
+  /* ---- Pagination ---- */
+  .pagination {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .pagination button {
+    padding: 6px 12px;
+    border: 1px solid #ccc7bc;
+    background: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .pagination button.active { background: #1a1a1a; color: #f5f0e8; border-color: #1a1a1a; }
+  .pagination button:disabled { opacity: 0.4; cursor: default; }
+  .pagination span { color: #888; padding: 0 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Fuel Prices</h1>
+  <span id="last-updated">Loading...</span>
+</header>
+
+<div class="container">
+
+  <div class="tabs">
+    <button class="active" onclick="switchTab('stations')">All Stations</button>
+    <button onclick="switchTab('counties')">County Summary</button>
+  </div>
+
+  <!-- Stations tab -->
+  <div id="tab-stations">
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search station, town, postcode..." oninput="applyFilters()">
+
+      <div class="fuel-toggle">
+        <button class="active" id="btn-both" onclick="setFuel('both')">Both</button>
+        <button id="btn-e10" onclick="setFuel('E10')">Petrol (E10)</button>
+        <button id="btn-b7"  onclick="setFuel('B7')">Diesel (B7)</button>
+      </div>
+
+      <select id="county-filter" onchange="applyFilters()">
+        <option value="">All counties</option>
+      </select>
+
+      <select id="sort-select" onchange="applyFilters()">
+        <option value="B7-desc">Diesel: highest first</option>
+        <option value="B7-asc">Diesel: lowest first</option>
+        <option value="E10-desc">Petrol: highest first</option>
+        <option value="E10-asc">Petrol: lowest first</option>
+        <option value="last_updated-desc">Last updated: newest first</option>
+        <option value="last_updated-asc">Last updated: oldest first</option>
+        <option value="name-asc">Name A–Z</option>
+        <option value="county-asc">County A–Z</option>
+      </select>
+
+      <span class="count-label" id="count-label"></span>
+    </div>
+
+    <div class="table-wrap">
+      <table id="stations-table">
+        <thead>
+          <tr>
+            <th onclick="sortBy('name')">Station <span class="sort-arrow">↕</span></th>
+            <th onclick="sortBy('county')">County <span class="sort-arrow">↕</span></th>
+            <th onclick="sortBy('postcode')">Postcode <span class="sort-arrow">↕</span></th>
+            <th onclick="sortBy('E10')">Petrol E10 <span class="sort-arrow">↕</span></th>
+            <th onclick="sortBy('B7')">Diesel B7 <span class="sort-arrow">↕</span></th>
+            <th onclick="sortBy('last_updated')">Last Updated <span class="sort-arrow">↕</span></th>
+          </tr>
+        </thead>
+        <tbody id="stations-body"></tbody>
+      </table>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <!-- County tab -->
+  <div id="tab-counties" style="display:none">
+    <div class="controls">
+      <input type="text" id="county-search" placeholder="Search county..." oninput="renderCounties()">
+      <div class="fuel-toggle">
+        <button class="active" id="cbtn-both" onclick="setCountyFuel('both')">Both</button>
+        <button id="cbtn-e10" onclick="setCountyFuel('E10')">Petrol (E10)</button>
+        <button id="cbtn-b7"  onclick="setCountyFuel('B7')">Diesel (B7)</button>
+      </div>
+    </div>
+    <div class="county-grid" id="county-grid"></div>
+  </div>
+
+</div>
+
+<script>
+let allData = null;
+let filtered = [];
+let fuelMode = 'both';
+let countyFuelMode = 'both';
+let sortField = 'B7';
+let sortDir = 'desc';
+let page = 1;
+const PER_PAGE = 100;
+
+// ---- Load data ----
+async function loadData() {
+  try {
+    const resp = await fetch('fuel_data.json?_=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    allData = await resp.json();
+    init();
+  } catch (e) {
+    document.getElementById('last-updated').textContent = 'Failed to load fuel_data.json';
+    document.getElementById('stations-body').innerHTML =
+      '<tr><td colspan="6"><div class="notice"><strong>Could not load data</strong>Make sure fuel_data.json is in the same folder as this HTML file and you have run the Python script at least once.</div></td></tr>';
+  }
+}
+
+function init() {
+  const d = new Date(allData.generated_at);
+  document.getElementById('last-updated').textContent =
+    'Updated ' + d.toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}) +
+    ' at ' + d.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'}) + ' ';
+
+  // Populate county filter dropdown
+  const sel = document.getElementById('county-filter');
+  const counties = Object.keys(allData.county_summary).sort();
+  counties.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c; opt.textContent = c;
+    sel.appendChild(opt);
+  });
+
+  applyFilters();
+  renderCounties();
+}
+
+// ---- Filtering & sorting ----
+function applyFilters() {
+  if (!allData) return;
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const county = document.getElementById('county-filter').value;
+  const sortVal = document.getElementById('sort-select').value;
+  const [sf, sd] = sortVal.split('-');
+  sortField = sf; sortDir = sd;
+
+  filtered = allData.stations.filter(s => {
+    if (fuelMode === 'E10' && s.E10 === null) return false;
+    if (fuelMode === 'B7'  && s.B7  === null) return false;
+    if (county && s.county !== county) return false;
+    if (q) {
+      const hay = (s.name + ' ' + s.town + ' ' + s.postcode + ' ' + s.brand + ' ' + s.county).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    let av = a[sortField], bv = b[sortField];
+    if (typeof av === 'string') av = av.toLowerCase();
+    if (typeof bv === 'string') bv = bv.toLowerCase();
+    const nullLast = (sortDir === 'desc') ? -1 : 1;
+    if (av === null && bv === null) return 0;
+    if (av === null) return 1;
+    if (bv === null) return -1;
+    if (av < bv) return sortDir === 'asc' ? -1 : 1;
+    if (av > bv) return sortDir === 'asc' ? 1 : -1;
+    return 0;
+  });
+
+  page = 1;
+  document.getElementById('count-label').textContent = filtered.length.toLocaleString() + ' stations';
+  renderTable();
+}
+
+function sortBy(field) {
+  if (sortField === field) {
+    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortField = field;
+    sortDir = (field === 'E10' || field === 'B7') ? 'desc' : 'asc';
+  }
+  // Sync the sort dropdown
+  const sel = document.getElementById('sort-select');
+  const target = field + '-' + sortDir;
+  for (let opt of sel.options) { if (opt.value === target) { sel.value = target; break; } }
+  applyFilters();
+}
+
+function setFuel(mode) {
+  fuelMode = mode;
+  ['both','E10','B7'].forEach(m => {
+    document.getElementById('btn-' + m.toLowerCase()).classList.toggle('active', m === mode);
+  });
+  applyFilters();
+}
+
+function setCountyFuel(mode) {
+  countyFuelMode = mode;
+  ['both','E10','B7'].forEach(m => {
+    document.getElementById('cbtn-' + m.toLowerCase()).classList.toggle('active', m === mode);
+  });
+  renderCounties();
+}
+
+// ---- Render table ----
+function priceClass(p, all) {
+  if (p === null) return 'price-null';
+  const vals = all.filter(x => x !== null);
+  if (!vals.length) return 'price-mid';
+  const max = Math.max(...vals), min = Math.min(...vals);
+  const range = max - min || 1;
+  const pct = (p - min) / range;
+  if (pct >= 0.66) return 'price-high';
+  if (pct <= 0.33) return 'price-low';
+  return 'price-mid';
+}
+
+function fmtPrice(p) {
+  if (p === null) return '<span class="price-null">—</span>';
+  return p.toFixed(1) + 'p';
+}
+
+function fmtTimestamp(iso) {
+  if (!iso) return '<span class="price-null">—</span>';
+  const d = new Date(iso);
+  const diffMs = Date.now() - d.getTime();
+  const diffH = diffMs / 36e5;
+  if (diffH < 1) {
+    const diffM = Math.round(diffMs / 60000);
+    return `<span title="${iso}">${diffM}m ago</span>`;
+  }
+  if (diffH < 36) {
+    return `<span title="${iso}">${Math.round(diffH)}h ago</span>`;
+  }
+  return `<span title="${iso}">${d.toLocaleDateString('en-GB', {day:'numeric',month:'short'})}</span>`;
+}
+
+function renderTable() {
+  const body = document.getElementById('stations-body');
+  const start = (page - 1) * PER_PAGE;
+  const slice = filtered.slice(start, start + PER_PAGE);
+
+  // For colour coding, sample the visible page prices
+  const e10s = filtered.map(s => s.E10);
+  const b7s  = filtered.map(s => s.B7);
+
+  if (!slice.length) {
+    body.innerHTML = '<tr><td colspan="6"><div class="notice"><strong>No stations found</strong>Try adjusting your filters.</div></td></tr>';
+    renderPagination();
+    return;
+  }
+
+  body.innerHTML = slice.map(s => {
+    const pc  = priceClass(s.E10, e10s);
+    const pcd = priceClass(s.B7, b7s);
+    return `<tr>
+      <td>
+        <div class="station-name">${esc(s.name)}</div>
+        ${s.brand && s.brand !== s.name ? '<div class="station-brand">' + esc(s.brand) + '</div>' : ''}
+      </td>
+      <td>${esc(s.county)}</td>
+      <td><span class="postcode-badge">${esc(s.postcode)}</span>${s.town ? '<br><span style="color:#888;font-size:11px">' + esc(s.town) + '</span>' : ''}</td>
+      <td class="price-cell ${pc}">${fmtPrice(s.E10)}</td>
+      <td class="price-cell ${pcd}">${fmtPrice(s.B7)}</td>
+      <td class="price-cell" style="color:#666;white-space:nowrap">${fmtTimestamp(s.last_updated)}</td>
+    </tr>`;
+  }).join('');
+
+  // Highlight sorted column
+  document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
+  const fields = ['name','county','postcode','E10','B7','last_updated'];
+  const idx = fields.indexOf(sortField);
+  if (idx >= 0) document.querySelectorAll('thead th')[idx].classList.add('sorted');
+
+  renderPagination();
+}
+
+function renderPagination() {
+  const total = Math.ceil(filtered.length / PER_PAGE);
+  const el = document.getElementById('pagination');
+  if (total <= 1) { el.innerHTML = ''; return; }
+
+  let html = `<button onclick="goPage(${page-1})" ${page===1?'disabled':''}>&#8592; Prev</button>`;
+
+  const pages = [];
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= page-2 && i <= page+2)) pages.push(i);
+    else if (pages[pages.length-1] !== '...') pages.push('...');
+  }
+  pages.forEach(p2 => {
+    if (p2 === '...') html += '<span>...</span>';
+    else html += `<button onclick="goPage(${p2})" class="${p2===page?'active':''}">${p2}</button>`;
+  });
+
+  html += `<button onclick="goPage(${page+1})" ${page===total?'disabled':''}>Next &#8594;</button>`;
+  el.innerHTML = html;
+}
+
+function goPage(n) {
+  page = n;
+  renderTable();
+  window.scrollTo(0, 0);
+}
+
+// ---- Render counties ----
+function renderCounties() {
+  if (!allData) return;
+  const q = document.getElementById('county-search').value.trim().toLowerCase();
+  const grid = document.getElementById('county-grid');
+  const entries = Object.entries(allData.county_summary)
+    .filter(([name]) => !q || name.toLowerCase().includes(q))
+    .sort((a,b) => a[0].localeCompare(b[0]));
+
+  if (!entries.length) {
+    grid.innerHTML = '<div class="notice" style="grid-column:1/-1"><strong>No counties found</strong></div>';
+    return;
+  }
+
+  grid.innerHTML = entries.map(([name, c]) => {
+    const showE10 = countyFuelMode !== 'B7';
+    const showB7  = countyFuelMode !== 'E10';
+
+    const avgE10html = showE10 ? `
+      <div class="county-avg-item">
+        <span class="label">Avg Petrol</span>
+        <span class="val">${c.avg_E10 !== null ? c.avg_E10.toFixed(1) : '—'}<small>p</small></span>
+      </div>` : '';
+    const avgB7html = showB7 ? `
+      <div class="county-avg-item">
+        <span class="label">Avg Diesel</span>
+        <span class="val">${c.avg_B7 !== null ? c.avg_B7.toFixed(1) : '—'}<small>p</small></span>
+      </div>` : '';
+
+    const mostE10 = showE10 && c.most_expensive_E10 ? `
+      <div class="most-exp-label">Most expensive petrol</div>
+      <div class="most-exp-row">
+        <span class="mname">${esc(c.most_expensive_E10.name)}<br>
+          <span style="color:#aaa;font-size:11px">${esc(c.most_expensive_E10.postcode)}</span>
+        </span>
+        <span class="mprice">${c.most_expensive_E10.E10.toFixed(1)}p</span>
+      </div>` : '';
+
+    const mostB7 = showB7 && c.most_expensive_B7 ? `
+      <div class="most-exp-label" style="margin-top:8px">Most expensive diesel</div>
+      <div class="most-exp-row">
+        <span class="mname">${esc(c.most_expensive_B7.name)}<br>
+          <span style="color:#aaa;font-size:11px">${esc(c.most_expensive_B7.postcode)}</span>
+        </span>
+        <span class="mprice">${c.most_expensive_B7.B7.toFixed(1)}p</span>
+      </div>` : '';
+
+    return `<div class="county-card">
+      <h3>${esc(name)} <span>${c.station_count} stations</span></h3>
+      <div class="county-avgs">${avgE10html}${avgB7html}</div>
+      ${mostE10}${mostB7}
+    </div>`;
+  }).join('');
+}
+
+// ---- Tabs ----
+function switchTab(tab) {
+  document.getElementById('tab-stations').style.display = tab === 'stations' ? '' : 'none';
+  document.getElementById('tab-counties').style.display = tab === 'counties' ? '' : 'none';
+  document.querySelectorAll('.tabs button').forEach((b,i) => {
+    b.classList.toggle('active', (i===0 && tab==='stations') || (i===1 && tab==='counties'));
+  });
+}
+
+// ---- Utility ----
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ---- Auto-refresh every hour ----
+loadData();
+setInterval(loadData, 60 * 60 * 1000);
+</script>
+</body>
+</html>
