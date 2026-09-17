@@ -1,6 +1,5928 @@
 {
   "generated_at": "2026-09-16T15:00:00Z",
   "total_stations": 8111,
+  "county_summary": {
+    "-": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "ASTLEY SERVICE STATION",
+        "postcode": "M29 7HX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ASTLEY SERVICE STATION",
+        "postcode": "M29 7HX",
+        "B7": 196.9
+      }
+    },
+    "ABERDEEN": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BANCHORY",
+        "postcode": "AB31 5YR",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BANCHORY",
+        "postcode": "AB31 5YR",
+        "B7": 192.9
+      }
+    },
+    "ABERDEEN CITY": {
+      "station_count": 2,
+      "avg_E10": 175.4,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "PGG DON",
+        "postcode": "AB24 1XN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "ABERDEEN AIRPORT SERVICE STATION",
+        "postcode": "AB21 0LU",
+        "B7": 199.9
+      }
+    },
+    "ABERDEENSHIRE": {
+      "station_count": 26,
+      "avg_E10": 174.1,
+      "avg_B7": 198.1,
+      "most_expensive_E10": {
+        "name": "MFG ESPLANADE",
+        "postcode": "AB11 5RN",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ESPLANADE",
+        "postcode": "AB11 5RN",
+        "B7": 199.9
+      }
+    },
+    "ABERYSTWYTH": {
+      "station_count": 1,
+      "avg_E10": 164.7,
+      "avg_B7": 186.7,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ABERYSTWYTH",
+        "postcode": "SY23 3TL",
+        "E10": 164.7
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ABERYSTWYTH",
+        "postcode": "SY23 3TL",
+        "B7": 186.7
+      }
+    },
+    "ALDERSHOT": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ALDERSHOT",
+        "postcode": "GU11 1NX",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ALDERSHOT",
+        "postcode": "GU11 1NX",
+        "B7": 191.9
+      }
+    },
+    "AMBLE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS AMBLE",
+        "postcode": "NE65 0PE",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS AMBLE",
+        "postcode": "NE65 0PE",
+        "B7": 194.9
+      }
+    },
+    "ANGLESEY": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "ESSAR GWALIA SERVICE STATION",
+        "postcode": "LL65 3DR",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR GWALIA SERVICE STATION",
+        "postcode": "LL65 3DR",
+        "B7": 191.9
+      }
+    },
+    "ANGUS": {
+      "station_count": 7,
+      "avg_E10": 173.6,
+      "avg_B7": 197.6,
+      "most_expensive_E10": {
+        "name": "PGG FORFAR",
+        "postcode": "DD8 1BF",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG FORFAR",
+        "postcode": "DD8 1BF",
+        "B7": 211.9
+      }
+    },
+    "ARGYLL & BUTE": {
+      "station_count": 1,
+      "avg_E10": 172.7,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "ARROCHAR FUEL EXPRESS AUTOMAT",
+        "postcode": "G83 7AJ",
+        "E10": 172.7
+      },
+      "most_expensive_B7": {
+        "name": "ARROCHAR FUEL EXPRESS AUTOMAT",
+        "postcode": "G83 7AJ",
+        "B7": 195.7
+      }
+    },
+    "ASHFORD": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "JOHN PAGE TRAILER LTD",
+        "postcode": "TN27 8BH",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "JOHN PAGE TRAILER LTD",
+        "postcode": "TN27 8BH",
+        "B7": 194.9
+      }
+    },
+    "AVON": {
+      "station_count": 20,
+      "avg_E10": 174.1,
+      "avg_B7": 196.7,
+      "most_expensive_E10": {
+        "name": "SHELL DOWNEND",
+        "postcode": "BS36 1AH",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL DOWNEND",
+        "postcode": "BS36 1AH",
+        "B7": 199.9
+      }
+    },
+    "AYRSHIRE": {
+      "station_count": 9,
+      "avg_E10": 167.8,
+      "avg_B7": 191.2,
+      "most_expensive_E10": {
+        "name": "TGC - WESTERN",
+        "postcode": "KA3 1UT",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - PRESTWICK",
+        "postcode": "KA9 1AS",
+        "B7": 195.9
+      }
+    },
+    "BABERGH": {
+      "station_count": 2,
+      "avg_E10": 167.9,
+      "avg_B7": 190.4,
+      "most_expensive_E10": {
+        "name": "NEDGING AUTOCENTRE",
+        "postcode": "IP7 7BN",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "NEDGING AUTOCENTRE",
+        "postcode": "IP7 7BN",
+        "B7": 191.9
+      }
+    },
+    "BANBURY": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 188.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BANBURY",
+        "postcode": "OX16 2BB",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BANBURY",
+        "postcode": "OX16 2BB",
+        "B7": 188.9
+      }
+    },
+    "BANGOR": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "GARTH SERVICES",
+        "postcode": "LL57 1AB",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "GARTH SERVICES",
+        "postcode": "LL57 1AB",
+        "B7": 196.9
+      }
+    },
+    "BARGOED": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BARGOED",
+        "postcode": "CF81 8YD",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BARGOED",
+        "postcode": "CF81 8YD",
+        "B7": 189.9
+      }
+    },
+    "BARNARD CASTLE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "BARNARD CASTLE SERVICE STATION",
+        "postcode": "DL12 8HL",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "BARNARD CASTLE SERVICE STATION",
+        "postcode": "DL12 8HL",
+        "B7": 196.9
+      }
+    },
+    "BARNSLEY": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BRAMPTON",
+        "postcode": "S73 0SX",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BRAMPTON",
+        "postcode": "S73 0SX",
+        "B7": 191.9
+      }
+    },
+    "BATH AND NORTH EAST SOMERSET": {
+      "station_count": 1,
+      "avg_E10": 173.7,
+      "avg_B7": 198.7,
+      "most_expensive_E10": {
+        "name": "NEWBRIDGE ROAD FUEL EXPRESS AUTOMAT",
+        "postcode": "BA1 3HW",
+        "E10": 173.7
+      },
+      "most_expensive_B7": {
+        "name": "NEWBRIDGE ROAD FUEL EXPRESS AUTOMAT",
+        "postcode": "BA1 3HW",
+        "B7": 198.7
+      }
+    },
+    "BATHGATE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "ARMADALE FILLING STATION",
+        "postcode": "EH48 2PE",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ARMADALE FILLING STATION",
+        "postcode": "EH48 2PE",
+        "B7": 196.9
+      }
+    },
+    "BEDFORD": {
+      "station_count": 1,
+      "avg_E10": 175.7,
+      "avg_B7": 194.7,
+      "most_expensive_E10": {
+        "name": "ESSAR WHARLEY END",
+        "postcode": "MK43 0AW",
+        "E10": 175.7
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR WHARLEY END",
+        "postcode": "MK43 0AW",
+        "B7": 194.7
+      }
+    },
+    "BEDFORDSHIRE": {
+      "station_count": 28,
+      "avg_E10": 176.0,
+      "avg_B7": 198.7,
+      "most_expensive_E10": {
+        "name": "TODDINGTON NORTH SERVICE AREA",
+        "postcode": "LU5 6HR",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "TODDINGTON NORTH SERVICE AREA",
+        "postcode": "LU5 6HR",
+        "B7": 217.9
+      }
+    },
+    "BEDFORSHIRE": {
+      "station_count": 4,
+      "avg_E10": 170.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "ELSTOW",
+        "postcode": "MK42 9NU",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "ELSTOW",
+        "postcode": "MK42 9NU",
+        "B7": 195.9
+      }
+    },
+    "BERKSHIRE": {
+      "station_count": 52,
+      "avg_E10": 176.2,
+      "avg_B7": 198.4,
+      "most_expensive_E10": {
+        "name": "CHIEVELEY SERVICE AREA",
+        "postcode": "RG18 9XX",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "CHIEVELEY SERVICE AREA",
+        "postcode": "RG18 9XX",
+        "B7": 217.9
+      }
+    },
+    "BERWICKSHIRE": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS EARLSTON",
+        "postcode": "TD4 6DL",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS EARLSTON",
+        "postcode": "TD4 6DL",
+        "B7": 192.9
+      }
+    },
+    "BEXLEY": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "ERITH",
+        "postcode": "DA8 3EX",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "ERITH",
+        "postcode": "DA8 3EX",
+        "B7": 196.9
+      }
+    },
+    "BILLINGHAM": {
+      "station_count": 1,
+      "avg_E10": 177.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG WYNYARD",
+        "postcode": "TS22 5PZ",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WYNYARD",
+        "postcode": "TS22 5PZ",
+        "B7": 199.9
+      }
+    },
+    "BIRMINGHAM": {
+      "station_count": 10,
+      "avg_E10": 173.1,
+      "avg_B7": 196.2,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK HOPWOOD PARK",
+        "postcode": "B48 7AU",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK HOPWOOD PARK",
+        "postcode": "B48 7AU",
+        "B7": 214.9
+      }
+    },
+    "BLACKBURN": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS GREAT HARWOOD",
+        "postcode": "BB6 7AT",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS GREAT HARWOOD",
+        "postcode": "BB6 7AT",
+        "B7": 192.9
+      }
+    },
+    "BLACKPOOL": {
+      "station_count": 1,
+      "avg_E10": 164.9,
+      "avg_B7": 186.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BLACKPOOL",
+        "postcode": "FY4 2RP",
+        "E10": 164.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BLACKPOOL",
+        "postcode": "FY4 2RP",
+        "B7": 186.9
+      }
+    },
+    "BLAENAU GWENT": {
+      "station_count": 3,
+      "avg_E10": 171.2,
+      "avg_B7": 195.2,
+      "most_expensive_E10": {
+        "name": "TREDEGAR SERVICE STATION",
+        "postcode": "NP22 4XL",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "TREDEGAR SERVICE STATION",
+        "postcode": "NP22 4XL",
+        "B7": 196.9
+      }
+    },
+    "BLYTH": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "BEBSIDE SERVICES",
+        "postcode": "NE24 4HN",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "BEBSIDE SERVICES",
+        "postcode": "NE24 4HN",
+        "B7": 195.9
+      }
+    },
+    "BOLTON": {
+      "station_count": 4,
+      "avg_E10": 168.9,
+      "avg_B7": 192.7,
+      "most_expensive_E10": {
+        "name": "MFG NEWBROOK",
+        "postcode": "BL5 1EL",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG NEWBROOK",
+        "postcode": "BL5 1EL",
+        "B7": 194.9
+      }
+    },
+    "BONNYBRIDGE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "BONNYBRIDGE FILLING STATION",
+        "postcode": "FK4 1AG",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "BONNYBRIDGE FILLING STATION",
+        "postcode": "FK4 1AG",
+        "B7": 194.9
+      }
+    },
+    "BRADFORD": {
+      "station_count": 2,
+      "avg_E10": 164.4,
+      "avg_B7": 187.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BRADFORD ENTERPRISE 5",
+        "postcode": "BD10 8EG",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BRADFORD ENTERPRISE 5",
+        "postcode": "BD10 8EG",
+        "B7": 189.9
+      }
+    },
+    "BRENT": {
+      "station_count": 1,
+      "avg_E10": 176.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "PARK ROYAL",
+        "postcode": "NW10 7BX",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "PARK ROYAL",
+        "postcode": "NW10 7BX",
+        "B7": 199.9
+      }
+    },
+    "BRIDGEND": {
+      "station_count": 2,
+      "avg_E10": 172.4,
+      "avg_B7": 194.4,
+      "most_expensive_E10": {
+        "name": "RONTEC PENDRAGON",
+        "postcode": "CF33 6HR",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PENCOED",
+        "postcode": "CF35 5NH",
+        "B7": 194.9
+      }
+    },
+    "BRIDGEND COUNTY BOROUGH": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "BLACKMILL SERVICE STATION",
+        "postcode": "CF35 6DR",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "BLACKMILL SERVICE STATION",
+        "postcode": "CF35 6DR",
+        "B7": 192.9
+      }
+    },
+    "BRIGEND": {
+      "station_count": 1,
+      "avg_E10": 177.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK SARN PARK",
+        "postcode": "CF32 9SY",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK SARN PARK",
+        "postcode": "CF32 9SY",
+        "B7": 199.9
+      }
+    },
+    "BRIGHTON & HOVE": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "PATCHAM",
+        "postcode": "BN1 8YB",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "PATCHAM",
+        "postcode": "BN1 8YB",
+        "B7": 195.9
+      }
+    },
+    "BRISTOL": {
+      "station_count": 11,
+      "avg_E10": 173.7,
+      "avg_B7": 196.6,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK GORDANO",
+        "postcode": "BS20 7XG",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK GORDANO",
+        "postcode": "BS20 7XG",
+        "B7": 214.9
+      }
+    },
+    "BROADLAND": {
+      "station_count": 1,
+      "avg_E10": 165.7,
+      "avg_B7": 189.7,
+      "most_expensive_E10": {
+        "name": "PROGRESS FUELS LTD",
+        "postcode": "NR6 7QN",
+        "E10": 165.7
+      },
+      "most_expensive_B7": {
+        "name": "PROGRESS FUELS LTD",
+        "postcode": "NR6 7QN",
+        "B7": 189.7
+      }
+    },
+    "BUCKINGHAMSHIRE": {
+      "station_count": 59,
+      "avg_E10": 172.6,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "SHELL BEACONSFIELD",
+        "postcode": "HP9 2SE",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL BEACONSFIELD",
+        "postcode": "HP9 2SE",
+        "B7": 206.9
+      }
+    },
+    "BURNTWOOD": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BURNTWOOD",
+        "postcode": "WS7 3XA",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BURNTWOOD",
+        "postcode": "WS7 3XA",
+        "B7": 189.9
+      }
+    },
+    "BURTON UPON TRENT": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BURTON UPON TRENT",
+        "postcode": "DE14 3JP",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BURTON UPON TRENT",
+        "postcode": "DE14 3JP",
+        "B7": 191.9
+      }
+    },
+    "BURY ST. EDMONDS": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG WEST SUFFOLK",
+        "postcode": "IP30 9NF",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WEST SUFFOLK",
+        "postcode": "IP30 9NF",
+        "B7": 199.9
+      }
+    },
+    "CAERPHILLY": {
+      "station_count": 3,
+      "avg_E10": 169.2,
+      "avg_B7": 191.2,
+      "most_expensive_E10": {
+        "name": "MFG CAERPHILLY",
+        "postcode": "CF83 2RP",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ASDA BLACKWOOD EXPRESS PETROL",
+        "postcode": "NP2 1AH",
+        "B7": 192.9
+      }
+    },
+    "CALDERDALE": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "UNDERCLIFFE SERVICE STATION",
+        "postcode": "HX3 6XG",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "UNDERCLIFFE SERVICE STATION",
+        "postcode": "HX3 6XG",
+        "B7": 199.9
+      }
+    },
+    "CAMARTHENSHIRE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "ESSAR  CHIVERS CORNER GARAGE",
+        "postcode": "SA16 0BS",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR  CHIVERS CORNER GARAGE",
+        "postcode": "SA16 0BS",
+        "B7": 191.9
+      }
+    },
+    "CAMBRIDGE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CAMBOURNE",
+        "postcode": "CB23 6EY",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CAMBOURNE",
+        "postcode": "CB23 6EY",
+        "B7": 192.9
+      }
+    },
+    "CAMBRIDGESHIRE": {
+      "station_count": 53,
+      "avg_E10": 174.8,
+      "avg_B7": 196.5,
+      "most_expensive_E10": {
+        "name": "SHELL PETERBOROUGH",
+        "postcode": "PE7 3UQ",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL TRUMPINGTON",
+        "postcode": "CB2 2LS",
+        "B7": 199.9
+      }
+    },
+    "CAMBRIDGSHIRE": {
+      "station_count": 2,
+      "avg_E10": 184.9,
+      "avg_B7": 204.9,
+      "most_expensive_E10": {
+        "name": "SAWTRY SERVICE AREA",
+        "postcode": "PE28 5XW",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "SAWTRY SERVICE AREA",
+        "postcode": "PE28 5XW",
+        "B7": 217.9
+      }
+    },
+    "CAMBS": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "RONTEC WANSFORD",
+        "postcode": "PE8 6LB",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC WANSFORD",
+        "postcode": "PE8 6LB",
+        "B7": 196.9
+      }
+    },
+    "CANNOCK CHASE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "TOPSTOP SERVICES CANNOCK LTD",
+        "postcode": "WS11 5RW",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "TOPSTOP SERVICES CANNOCK LTD",
+        "postcode": "WS11 5RW",
+        "B7": 189.9
+      }
+    },
+    "CANTERBURY": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CANTERBURY",
+        "postcode": "CT1 3TQ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CANTERBURY",
+        "postcode": "CT1 3TQ",
+        "B7": 194.9
+      }
+    },
+    "CARDIFF": {
+      "station_count": 6,
+      "avg_E10": 172.2,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK CARDIFF",
+        "postcode": "CF23 8RA",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK CARDIFF",
+        "postcode": "CF23 8RA",
+        "B7": 199.9
+      }
+    },
+    "CARLISLE": {
+      "station_count": 2,
+      "avg_E10": 171.4,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "CROSBY MOOR FILLING STATION",
+        "postcode": "CA6 4QX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "CROSBY MOOR FILLING STATION",
+        "postcode": "CA6 4QX",
+        "B7": 195.9
+      }
+    },
+    "CARMARTHEN": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG ST CLEARS",
+        "postcode": "SA33 4JW",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ST CLEARS",
+        "postcode": "SA33 4JW",
+        "B7": 194.9
+      }
+    },
+    "CARMARTHENSHIRE": {
+      "station_count": 11,
+      "avg_E10": 170.2,
+      "avg_B7": 193.0,
+      "most_expensive_E10": {
+        "name": "ASCONA FORGE FILLING STATION",
+        "postcode": "SA33 4NA",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ASCONA MANORDEILO SERVICE STATION",
+        "postcode": "SA19 7BN",
+        "B7": 196.7
+      }
+    },
+    "CASTLE DOUGLAS": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "CROWN FILLING STATION",
+        "postcode": "DG7 1HX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "CROWN FILLING STATION",
+        "postcode": "DG7 1HX",
+        "B7": 194.9
+      }
+    },
+    "CENTRAL BEDFORDSHIRE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 204.9,
+      "most_expensive_E10": {
+        "name": "ASTWICK",
+        "postcode": "SG5 4BL",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ASTWICK",
+        "postcode": "SG5 4BL",
+        "B7": 204.9
+      }
+    },
+    "CEREDIGION": {
+      "station_count": 2,
+      "avg_E10": 170.8,
+      "avg_B7": 195.8,
+      "most_expensive_E10": {
+        "name": "ASCONA DRYSLWYN SERVICE STATION",
+        "postcode": "SA46 0HF",
+        "E10": 172.7
+      },
+      "most_expensive_B7": {
+        "name": "ASCONA DRYSLWYN SERVICE STATION",
+        "postcode": "SA46 0HF",
+        "B7": 197.7
+      }
+    },
+    "CHELTENHAM": {
+      "station_count": 2,
+      "avg_E10": 166.9,
+      "avg_B7": 188.4,
+      "most_expensive_E10": {
+        "name": "MFG BOUNCERS LANE",
+        "postcode": "GL52 5JF",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BOUNCERS LANE",
+        "postcode": "GL52 5JF",
+        "B7": 189.9
+      }
+    },
+    "CHESHIRE": {
+      "station_count": 77,
+      "avg_E10": 175.3,
+      "avg_B7": 197.1,
+      "most_expensive_E10": {
+        "name": "LYMM BP SERVICE AREA",
+        "postcode": "WA13 0SP",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "LYMM BP SERVICE AREA",
+        "postcode": "WA13 0SP",
+        "B7": 217.9
+      }
+    },
+    "CHESIRE": {
+      "station_count": 1,
+      "avg_E10": 162.9,
+      "avg_B7": 185.9,
+      "most_expensive_E10": {
+        "name": "GEMINI",
+        "postcode": "WA5 7TY",
+        "E10": 162.9
+      },
+      "most_expensive_B7": {
+        "name": "GEMINI",
+        "postcode": "WA5 7TY",
+        "B7": 185.9
+      }
+    },
+    "CHESTER": {
+      "station_count": 2,
+      "avg_E10": 171.9,
+      "avg_B7": 194.4,
+      "most_expensive_E10": {
+        "name": "MFG ROWTON",
+        "postcode": "CH3 6AF",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ROWTON",
+        "postcode": "CH3 6AF",
+        "B7": 196.9
+      }
+    },
+    "CHESTER LE STREET": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "OUSTON FILLING STATION",
+        "postcode": "DH2 1QX",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "OUSTON FILLING STATION",
+        "postcode": "DH2 1QX",
+        "B7": 193.9
+      }
+    },
+    "CHESTERFIELD": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS STAVELEY",
+        "postcode": "S43 3UL",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS STAVELEY",
+        "postcode": "S43 3UL",
+        "B7": 192.9
+      }
+    },
+    "CHOPPINGTON": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "STAKEFORD FILLING STATION",
+        "postcode": "NE62 5QQ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "STAKEFORD FILLING STATION",
+        "postcode": "NE62 5QQ",
+        "B7": 194.9
+      }
+    },
+    "CITY OF GLASGOW": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "GULF HILLINGTON SERVICE STATION",
+        "postcode": "G52 4NY",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "GULF HILLINGTON SERVICE STATION",
+        "postcode": "G52 4NY",
+        "B7": 194.9
+      }
+    },
+    "CLACKMANNANSHIRE": {
+      "station_count": 2,
+      "avg_E10": 169.8,
+      "avg_B7": 194.8,
+      "most_expensive_E10": {
+        "name": "AULD BRIG FILLING STATION",
+        "postcode": "FK10 2PF",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "AULD BRIG FILLING STATION",
+        "postcode": "FK10 2PF",
+        "B7": 196.9
+      }
+    },
+    "CLACTON-ON-SEA": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CLACTON LITTLE CLACTON",
+        "postcode": "CO16 9SB",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CLACTON LITTLE CLACTON",
+        "postcode": "CO16 9SB",
+        "B7": 191.9
+      }
+    },
+    "CLEVELAND": {
+      "station_count": 9,
+      "avg_E10": 170.2,
+      "avg_B7": 193.7,
+      "most_expensive_E10": {
+        "name": "MFG TEESSIDE",
+        "postcode": "TS18 3RW",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG TEESSIDE",
+        "postcode": "TS18 3RW",
+        "B7": 196.9
+      }
+    },
+    "CLWYD": {
+      "station_count": 11,
+      "avg_E10": 175.5,
+      "avg_B7": 196.6,
+      "most_expensive_E10": {
+        "name": "SHELL NORTHOP",
+        "postcode": "CH7 6HB",
+        "E10": 186.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL EXPRESSWAY",
+        "postcode": "LL22 8HH",
+        "B7": 199.9
+      }
+    },
+    "CO DURHAM": {
+      "station_count": 5,
+      "avg_E10": 179.7,
+      "avg_B7": 202.7,
+      "most_expensive_E10": {
+        "name": "WASHINGTON NORTH SERVICE AREA",
+        "postcode": "DH3 2SJ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "WASHINGTON NORTH SERVICE AREA",
+        "postcode": "DH3 2SJ",
+        "B7": 217.9
+      }
+    },
+    "CO. ANTRIM": {
+      "station_count": 2,
+      "avg_E10": 165.8,
+      "avg_B7": 190.9,
+      "most_expensive_E10": {
+        "name": "APPLEGREEN TEMPLEPATRICK SERVICES AREA",
+        "postcode": "BT36 4RN",
+        "E10": 166.8
+      },
+      "most_expensive_B7": {
+        "name": "APPLEGREEN TEMPLEPATRICK SERVICES AREA",
+        "postcode": "BT36 4RN",
+        "B7": 191.8
+      }
+    },
+    "CO. DOWN": {
+      "station_count": 2,
+      "avg_E10": 169.8,
+      "avg_B7": 194.8,
+      "most_expensive_E10": {
+        "name": "APPLEGREEN LISBURN SOUTH SERVICES AREA",
+        "postcode": "BT27 5TL",
+        "E10": 170.8
+      },
+      "most_expensive_B7": {
+        "name": "APPLEGREEN LISBURN SOUTH SERVICES AREA",
+        "postcode": "BT27 5TL",
+        "B7": 195.8
+      }
+    },
+    "CO.DOWN": {
+      "station_count": 1,
+      "avg_E10": 170.8,
+      "avg_B7": 195.8,
+      "most_expensive_E10": {
+        "name": "APPLEGREEN LISBURN NORTH SERVICES AREA",
+        "postcode": "BT27 5SF",
+        "E10": 170.8
+      },
+      "most_expensive_B7": {
+        "name": "APPLEGREEN LISBURN NORTH SERVICES AREA",
+        "postcode": "BT27 5SF",
+        "B7": 195.8
+      }
+    },
+    "COLCHESTER": {
+      "station_count": 1,
+      "avg_E10": null,
+      "avg_B7": 195.9,
+      "most_expensive_E10": null,
+      "most_expensive_B7": {
+        "name": "GREAT HORKESLEY GARAGE",
+        "postcode": "CO6 4EJ",
+        "B7": 195.9
+      }
+    },
+    "CONWY": {
+      "station_count": 3,
+      "avg_E10": 174.8,
+      "avg_B7": 197.2,
+      "most_expensive_E10": {
+        "name": "MFG ORME VIEW",
+        "postcode": "LL34 6UN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ORME VIEW",
+        "postcode": "LL34 6UN",
+        "B7": 199.9
+      }
+    },
+    "CORBY": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CORBY",
+        "postcode": "NN18 8LH",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CORBY",
+        "postcode": "NN18 8LH",
+        "B7": 189.9
+      }
+    },
+    "CORNWALL": {
+      "station_count": 32,
+      "avg_E10": 175.3,
+      "avg_B7": 197.5,
+      "most_expensive_E10": {
+        "name": "SALTASH SERVICE AREA",
+        "postcode": "PL12 6LF",
+        "E10": 182.9
+      },
+      "most_expensive_B7": {
+        "name": "SALTASH SERVICE AREA",
+        "postcode": "PL12 6LF",
+        "B7": 214.9
+      }
+    },
+    "COUNTRY DURHAM": {
+      "station_count": 1,
+      "avg_E10": 171.0,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "DURHAM ROAD FILLING STATION,",
+        "postcode": "DH3 2PF",
+        "E10": 171.0
+      },
+      "most_expensive_B7": {
+        "name": "DURHAM ROAD FILLING STATION,",
+        "postcode": "DH3 2PF",
+        "B7": 194.9
+      }
+    },
+    "COUNTY ARMAGH": {
+      "station_count": 1,
+      "avg_E10": 163.7,
+      "avg_B7": 185.7,
+      "most_expensive_E10": {
+        "name": "ASDA PORTADOWN SUPERSTORE",
+        "postcode": "BT63 5AQ",
+        "E10": 163.7
+      },
+      "most_expensive_B7": {
+        "name": "ASDA PORTADOWN SUPERSTORE",
+        "postcode": "BT63 5AQ",
+        "B7": 185.7
+      }
+    },
+    "COUNTY DURHAM": {
+      "station_count": 44,
+      "avg_E10": 171.0,
+      "avg_B7": 194.4,
+      "most_expensive_E10": {
+        "name": "SHELL EASINGTON WEST",
+        "postcode": "SR7 8SS",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG THINFORD NORTH",
+        "postcode": "DL17 8RU",
+        "B7": 205.9
+      }
+    },
+    "COVENTRY": {
+      "station_count": 4,
+      "avg_E10": 171.9,
+      "avg_B7": 195.2,
+      "most_expensive_E10": {
+        "name": "MFG RADFORD",
+        "postcode": "CV6 3EX",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG RADFORD",
+        "postcode": "CV6 3EX",
+        "B7": 197.9
+      }
+    },
+    "CROYDON": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG CROYDON",
+        "postcode": "CR0 0LA",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CROYDON",
+        "postcode": "CR0 0LA",
+        "B7": 196.9
+      }
+    },
+    "CUMBRIA": {
+      "station_count": 35,
+      "avg_E10": 173.6,
+      "avg_B7": 197.5,
+      "most_expensive_E10": {
+        "name": "BURTON SERVICE AREA",
+        "postcode": "LA6 1JF",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "BURTON SERVICE AREA",
+        "postcode": "LA6 1JF",
+        "B7": 217.9
+      }
+    },
+    "CUMNOCK": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG AUCHINLECK",
+        "postcode": "KA18 2AB",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG AUCHINLECK",
+        "postcode": "KA18 2AB",
+        "B7": 191.9
+      }
+    },
+    "CWMBRAN": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 188.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CWMBRAN",
+        "postcode": "NP44 1QP",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CWMBRAN",
+        "postcode": "NP44 1QP",
+        "B7": 188.9
+      }
+    },
+    "DARLINGTON": {
+      "station_count": 2,
+      "avg_E10": 168.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "CARMEL ROAD FILLING STATION",
+        "postcode": "DL3 8DQ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "CARMEL ROAD FILLING STATION",
+        "postcode": "DL3 8DQ",
+        "B7": 194.9
+      }
+    },
+    "DENBIGHSHIRE": {
+      "station_count": 4,
+      "avg_E10": 175.2,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "EG ST ASAPH PFS",
+        "postcode": "LL17 0LY",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - RUTHIN",
+        "postcode": "LL151NB",
+        "B7": 197.9
+      }
+    },
+    "DERBYSHIRE": {
+      "station_count": 56,
+      "avg_E10": 172.9,
+      "avg_B7": 195.0,
+      "most_expensive_E10": {
+        "name": "DONINGTON PARK SERVICE AREA",
+        "postcode": "DE74 2TN",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "DONINGTON PARK SERVICE AREA",
+        "postcode": "DE74 2TN",
+        "B7": 217.9
+      }
+    },
+    "DEVON": {
+      "station_count": 51,
+      "avg_E10": 173.2,
+      "avg_B7": 196.0,
+      "most_expensive_E10": {
+        "name": "EXETER SERVICE AREA",
+        "postcode": "EX2 7HF",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "EXETER SERVICE AREA",
+        "postcode": "EX2 7HF",
+        "B7": 217.9
+      }
+    },
+    "DONCASTER": {
+      "station_count": 5,
+      "avg_E10": 168.5,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "SHELL BENTLEY SERVICE STATION",
+        "postcode": "DN5 9SA",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL BENTLEY SERVICE STATION",
+        "postcode": "DN5 9SA",
+        "B7": 194.9
+      }
+    },
+    "DORSET": {
+      "station_count": 40,
+      "avg_E10": 174.3,
+      "avg_B7": 197.3,
+      "most_expensive_E10": {
+        "name": "SHELL BERE REGIS",
+        "postcode": "BH20 7LA",
+        "E10": 186.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG HOLDENHURST ROAD",
+        "postcode": "BH8 8BS",
+        "B7": 205.9
+      }
+    },
+    "DUDLEY": {
+      "station_count": 3,
+      "avg_E10": 170.6,
+      "avg_B7": 193.6,
+      "most_expensive_E10": {
+        "name": "MFG NETHERTON",
+        "postcode": "DY2 9PS",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "LYE",
+        "postcode": "DY9 8DG",
+        "B7": 194.9
+      }
+    },
+    "DUMBARTONSHIRE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG DUNGLASS",
+        "postcode": "G82 2TY",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG DUNGLASS",
+        "postcode": "G82 2TY",
+        "B7": 199.9
+      }
+    },
+    "DUMFRIES": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG DALBEATTIE",
+        "postcode": "DG5 4AH",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG DALBEATTIE",
+        "postcode": "DG5 4AH",
+        "B7": 197.9
+      }
+    },
+    "DUMFRIES & GALLOWAY": {
+      "station_count": 3,
+      "avg_E10": 179.8,
+      "avg_B7": 202.5,
+      "most_expensive_E10": {
+        "name": "ANNANDALE WATER SFCONNECT MWSA",
+        "postcode": "DG11 1HD",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "ANNANDALE WATER SFCONNECT MWSA",
+        "postcode": "DG11 1HD",
+        "B7": 214.9
+      }
+    },
+    "DUMFRIES AND GALLOWAY": {
+      "station_count": 5,
+      "avg_E10": 176.7,
+      "avg_B7": 199.5,
+      "most_expensive_E10": {
+        "name": "WIGTOWN ROAD SERVICES",
+        "postcode": "DG8 6JZ",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "WIGTOWN ROAD SERVICES",
+        "postcode": "DG8 6JZ",
+        "B7": 199.9
+      }
+    },
+    "DUMFRIESHIRE": {
+      "station_count": 2,
+      "avg_E10": 179.9,
+      "avg_B7": 196.4,
+      "most_expensive_E10": {
+        "name": "MFG GRETNA (MSA)",
+        "postcode": "DG16 5HQ",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GRETNA (MSA)",
+        "postcode": "DG16 5HQ",
+        "B7": 199.9
+      }
+    },
+    "DUMFRIESSHIRE": {
+      "station_count": 1,
+      "avg_E10": 176.9,
+      "avg_B7": 198.9,
+      "most_expensive_E10": {
+        "name": "SHELL COLLIN",
+        "postcode": "DG1 3SE",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL COLLIN",
+        "postcode": "DG1 3SE",
+        "B7": 198.9
+      }
+    },
+    "DUNBARTONSHIRE": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HELENSBURGH",
+        "postcode": "G84 7LA",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HELENSBURGH",
+        "postcode": "G84 7LA",
+        "B7": 193.9
+      }
+    },
+    "DUNDEE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ARBROATH",
+        "postcode": "DD11 1UH",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ARBROATH",
+        "postcode": "DD11 1UH",
+        "B7": 193.9
+      }
+    },
+    "DURHAM": {
+      "station_count": 3,
+      "avg_E10": 169.9,
+      "avg_B7": 192.6,
+      "most_expensive_E10": {
+        "name": "KIP HILL SERVICES",
+        "postcode": "DH9 0LL",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MEADOWFIELD FILLING STATION",
+        "postcode": "DH7 8ND",
+        "B7": 194.9
+      }
+    },
+    "DURHAM COUNTY": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "PARK ROAD SF CONNECT",
+        "postcode": "DH3 3SU",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "PARK ROAD SF CONNECT",
+        "postcode": "DH3 3SU",
+        "B7": 194.9
+      }
+    },
+    "DYFED": {
+      "station_count": 4,
+      "avg_E10": 171.8,
+      "avg_B7": 193.8,
+      "most_expensive_E10": {
+        "name": "MFG HAVERFORDWEST",
+        "postcode": "SA62 4BT",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC CROSS HANDS",
+        "postcode": "SA14 6RD",
+        "B7": 194.9
+      }
+    },
+    "DYFFRYN ARDUDWY": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "BARMOUTH ROAD SERVICE STATION",
+        "postcode": "LL44 2EN",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "BARMOUTH ROAD SERVICE STATION",
+        "postcode": "LL44 2EN",
+        "B7": 196.9
+      }
+    },
+    "EALING": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 190.9,
+      "most_expensive_E10": {
+        "name": "VIADUCT SERVICE STATION",
+        "postcode": "UB1 3EJ",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "VIADUCT SERVICE STATION",
+        "postcode": "UB1 3EJ",
+        "B7": 190.9
+      }
+    },
+    "EAST AYRSHIRE": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG KILMARNOCK",
+        "postcode": "KA1 5LQ",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG KILMARNOCK",
+        "postcode": "KA1 5LQ",
+        "B7": 197.9
+      }
+    },
+    "EAST DEVON": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MUSBURY GARAGE LTD",
+        "postcode": "EX13 8AX",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MUSBURY GARAGE LTD",
+        "postcode": "EX13 8AX",
+        "B7": 192.9
+      }
+    },
+    "EAST DUNBARTONSHIRE": {
+      "station_count": 2,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "WATERSIDE ROAD SERVICE STATION",
+        "postcode": "G66 3HG",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "WATERSIDE ROAD SERVICE STATION",
+        "postcode": "G66 3HG",
+        "B7": 194.9
+      }
+    },
+    "EAST LONDON": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG LEYTON",
+        "postcode": "E10 6JP",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG LEYTON",
+        "postcode": "E10 6JP",
+        "B7": 195.9
+      }
+    },
+    "EAST LOTHIAN": {
+      "station_count": 4,
+      "avg_E10": 172.2,
+      "avg_B7": 196.2,
+      "most_expensive_E10": {
+        "name": "EG MACMERRY PFS",
+        "postcode": "EH33 1EJ",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG DALRYMPLE",
+        "postcode": "EH39 5DF",
+        "B7": 197.9
+      }
+    },
+    "EAST RIDING": {
+      "station_count": 3,
+      "avg_E10": 172.6,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "RONTEC BOOTHFERRY ROAD",
+        "postcode": "HU13 9AU",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC BOOTHFERRY ROAD",
+        "postcode": "HU13 9AU",
+        "B7": 194.9
+      }
+    },
+    "EAST RIDING OF YORKSHIRE": {
+      "station_count": 4,
+      "avg_E10": 171.4,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG BEVERLEY WEST",
+        "postcode": "HU17 8ZN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BEVERLEY WEST",
+        "postcode": "HU17 8ZN",
+        "B7": 199.9
+      }
+    },
+    "EAST SUSSEX": {
+      "station_count": 40,
+      "avg_E10": 171.8,
+      "avg_B7": 195.0,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP ISENHURST",
+        "postcode": "TN21 0UE",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GOLDEN CROSS",
+        "postcode": "BN27 4AW",
+        "B7": 199.9
+      }
+    },
+    "EAST YORKSHIRE": {
+      "station_count": 8,
+      "avg_E10": 170.7,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP COASTWAYS",
+        "postcode": "YO43 3PN",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WEST CAVE",
+        "postcode": "HU15 1RZ",
+        "B7": 199.9
+      }
+    },
+    "EDINBURGH": {
+      "station_count": 5,
+      "avg_E10": 165.3,
+      "avg_B7": 186.7,
+      "most_expensive_E10": {
+        "name": "MFG BARCLAY PLACE",
+        "postcode": "EH10 4HW",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BARCLAY PLACE",
+        "postcode": "EH10 4HW",
+        "B7": 189.9
+      }
+    },
+    "EDINBURGH, CITY OF": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "LIBERTON FILLING STATION",
+        "postcode": "EH16 6ND",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "LIBERTON FILLING STATION",
+        "postcode": "EH16 6ND",
+        "B7": 191.9
+      }
+    },
+    "ELLESMERE PORT": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ELLESMERE PORT",
+        "postcode": "CH65 6RU",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ELLESMERE PORT",
+        "postcode": "CH65 6RU",
+        "B7": 193.9
+      }
+    },
+    "ESSEX": {
+      "station_count": 133,
+      "avg_E10": 173.7,
+      "avg_B7": 196.8,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK BIRCHANGER",
+        "postcode": "CM23 5QZ",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK BIRCHANGER",
+        "postcode": "CM23 5QZ",
+        "B7": 209.9
+      }
+    },
+    "EXETER - DEVON": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG OAKLANDS SIDMOUTH",
+        "postcode": "EX5 2JJ",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG OAKLANDS SIDMOUTH",
+        "postcode": "EX5 2JJ",
+        "B7": 199.9
+      }
+    },
+    "EYEMOUTH": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "EYEMOUTH SERVICE STATION",
+        "postcode": "TD14 5AN",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "EYEMOUTH SERVICE STATION",
+        "postcode": "TD14 5AN",
+        "B7": 195.9
+      }
+    },
+    "FALKIRK": {
+      "station_count": 5,
+      "avg_E10": 171.7,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG BOWHOUSE",
+        "postcode": "FK2 0BX",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BOWHOUSE",
+        "postcode": "FK2 0BX",
+        "B7": 197.9
+      }
+    },
+    "FARNBOROUGH": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS FARNBOROUGH SOUTHWOOD",
+        "postcode": "GU14 0NZ",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS FARNBOROUGH SOUTHWOOD",
+        "postcode": "GU14 0NZ",
+        "B7": 191.9
+      }
+    },
+    "FIFE": {
+      "station_count": 16,
+      "avg_E10": 172.8,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "SHELL CAMDEAN",
+        "postcode": "KY11 2BN",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL CAMDEAN",
+        "postcode": "KY11 2BN",
+        "B7": 199.9
+      }
+    },
+    "FLINT": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "FLINT SERVICE STATION",
+        "postcode": "CH6 5QG",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "FLINT SERVICE STATION",
+        "postcode": "CH6 5QG",
+        "B7": 193.9
+      }
+    },
+    "FLINTSHIRE": {
+      "station_count": 3,
+      "avg_E10": 172.5,
+      "avg_B7": 194.8,
+      "most_expensive_E10": {
+        "name": "EG MOLD PFS",
+        "postcode": "CH7 1LB",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "EG MOLD PFS",
+        "postcode": "CH7 1LB",
+        "B7": 195.9
+      }
+    },
+    "FOREST OF DEAN": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "CROSS HANDS GARAGE LTD",
+        "postcode": "GL19 3BU",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "CROSS HANDS GARAGE LTD",
+        "postcode": "GL19 3BU",
+        "B7": 194.9
+      }
+    },
+    "FORT AUGUSTUS": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "GREAT GLEN FILLING STATION",
+        "postcode": "PH32 4DD",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "GREAT GLEN FILLING STATION",
+        "postcode": "PH32 4DD",
+        "B7": 196.9
+      }
+    },
+    "GALASHEILS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG TWEEDBANK",
+        "postcode": "TD1 3DJ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG TWEEDBANK",
+        "postcode": "TD1 3DJ",
+        "B7": 194.9
+      }
+    },
+    "GATESHEAD": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "RAPID SERVICE STATION",
+        "postcode": "NE9 7TD",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RAPID SERVICE STATION",
+        "postcode": "NE9 7TD",
+        "B7": 194.9
+      }
+    },
+    "GEDLING": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": null,
+      "most_expensive_E10": {
+        "name": "MANOR FUEL STATION",
+        "postcode": "NG14 6FN",
+        "E10": 171.9
+      },
+      "most_expensive_B7": null
+    },
+    "GLAMORGAN": {
+      "station_count": 7,
+      "avg_E10": 171.2,
+      "avg_B7": 194.8,
+      "most_expensive_E10": {
+        "name": "EG MERTHYR TYDFIL PFS",
+        "postcode": "CF47 8EB",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "EG MERTHYR TYDFIL PFS",
+        "postcode": "CF47 8EB",
+        "B7": 198.9
+      }
+    },
+    "GLASGOW": {
+      "station_count": 14,
+      "avg_E10": 170.8,
+      "avg_B7": 193.6,
+      "most_expensive_E10": {
+        "name": "MFG MEARNS CROSS",
+        "postcode": "G77 6AE",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MARYHILL",
+        "postcode": "G20 7LD",
+        "B7": 199.9
+      }
+    },
+    "GLASGOW CITY": {
+      "station_count": 21,
+      "avg_E10": 173.3,
+      "avg_B7": 196.0,
+      "most_expensive_E10": {
+        "name": "ASDA DUNCANSFIELD EXPRESS PETROL",
+        "postcode": "G65 9AE",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "SUNNINGDALE SF CONNECT",
+        "postcode": "G77 6QU",
+        "B7": 199.9
+      }
+    },
+    "GLOUCESHIRE": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "ESSAR BRIERLEY SERVICE STATION",
+        "postcode": "GL17 9DL",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR BRIERLEY SERVICE STATION",
+        "postcode": "GL17 9DL",
+        "B7": 195.9
+      }
+    },
+    "GLOUCESTER": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG LONGLEVENS",
+        "postcode": "GL2 0JH",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG LONGLEVENS",
+        "postcode": "GL2 0JH",
+        "B7": 193.9
+      }
+    },
+    "GLOUCESTERSHIRE": {
+      "station_count": 52,
+      "avg_E10": 172.4,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "SEVERN VIEW SERVICE AREA",
+        "postcode": "BS35 4BH",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "SEVERN VIEW SERVICE AREA",
+        "postcode": "BS35 4BH",
+        "B7": 217.9
+      }
+    },
+    "GLOUCESTSHIRE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "TGC - LECHLADE",
+        "postcode": "GL7 3ER",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - LECHLADE",
+        "postcode": "GL7 3ER",
+        "B7": 196.9
+      }
+    },
+    "GLOUCS": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "RONTEC STROUD",
+        "postcode": "GL5 2AX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC STROUD",
+        "postcode": "GL5 2AX",
+        "B7": 196.9
+      }
+    },
+    "GOSPORT": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "ANSON SERVICE STATION",
+        "postcode": "PO12 3AZ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ANSON SERVICE STATION",
+        "postcode": "PO12 3AZ",
+        "B7": 199.9
+      }
+    },
+    "GREAT YARMOUTH": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS BRADWELL",
+        "postcode": "NR31 8RT",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS BRADWELL",
+        "postcode": "NR31 8RT",
+        "B7": 192.9
+      }
+    },
+    "GREATER LONDON": {
+      "station_count": 53,
+      "avg_E10": 171.8,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "PERIVALE SF CONNECT",
+        "postcode": "UB6 8TF",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BEXLEYHEATH",
+        "postcode": "DA7 5AH",
+        "B7": 199.9
+      }
+    },
+    "GREATER MANCHESTER": {
+      "station_count": 45,
+      "avg_E10": 171.0,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "EG RIVINGTON NORTH PFS",
+        "postcode": "BL6 5UZ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "EG RIVINGTON NORTH PFS",
+        "postcode": "BL6 5UZ",
+        "B7": 214.9
+      }
+    },
+    "GRIMSBY": {
+      "station_count": 1,
+      "avg_E10": 163.9,
+      "avg_B7": 185.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CLEETHORPES LACEBY",
+        "postcode": "DN37 7SQ",
+        "E10": 163.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CLEETHORPES LACEBY",
+        "postcode": "DN37 7SQ",
+        "B7": 185.9
+      }
+    },
+    "GTR MANCHESTER": {
+      "station_count": 5,
+      "avg_E10": 170.3,
+      "avg_B7": 194.5,
+      "most_expensive_E10": {
+        "name": "MFG NEW WOLFE",
+        "postcode": "M32 8NB",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WEASTE",
+        "postcode": "M5 5BJ",
+        "B7": 195.9
+      }
+    },
+    "GUILDFORD": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS FLEET",
+        "postcode": "GU51 1HA",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS FLEET",
+        "postcode": "GU51 1HA",
+        "B7": 191.9
+      }
+    },
+    "GWENT": {
+      "station_count": 10,
+      "avg_E10": 173.2,
+      "avg_B7": 196.7,
+      "most_expensive_E10": {
+        "name": "SHELL OVERMONNOW",
+        "postcode": "NP25 5EZ",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL OVERMONNOW",
+        "postcode": "NP25 5EZ",
+        "B7": 199.9
+      }
+    },
+    "GWYNEDD": {
+      "station_count": 6,
+      "avg_E10": 175.7,
+      "avg_B7": 197.4,
+      "most_expensive_E10": {
+        "name": "SHELL BETWS-Y-COED",
+        "postcode": "LL24 0AR",
+        "E10": 183.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL BRITANNIA",
+        "postcode": "LL59 5EB",
+        "B7": 199.9
+      }
+    },
+    "HALIFAX": {
+      "station_count": 2,
+      "avg_E10": 168.9,
+      "avg_B7": 191.4,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HALIFAX",
+        "postcode": "HX2 8HY",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HALIFAX",
+        "postcode": "HX2 8HY",
+        "B7": 192.9
+      }
+    },
+    "HAMPSHIRE": {
+      "station_count": 86,
+      "avg_E10": 176.0,
+      "avg_B7": 198.4,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK FLEET SOUTH",
+        "postcode": "GU51 1AA",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK FLEET SOUTH",
+        "postcode": "GU51 1AA",
+        "B7": 214.9
+      }
+    },
+    "HARROGATE": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 188.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HARROGATE STARBECK",
+        "postcode": "HG2 7HW",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HARROGATE STARBECK",
+        "postcode": "HG2 7HW",
+        "B7": 188.9
+      }
+    },
+    "HARROW": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "BESSBOROUGH SF CONNECT",
+        "postcode": "HA1 3BS",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "BESSBOROUGH SF CONNECT",
+        "postcode": "HA1 3BS",
+        "B7": 199.9
+      }
+    },
+    "HARTLEPOOL": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "WYNYARD ROAD SERVICES",
+        "postcode": "TS25 3LB",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "WYNYARD ROAD SERVICES",
+        "postcode": "TS25 3LB",
+        "B7": 191.9
+      }
+    },
+    "HARWICH": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HARWICH",
+        "postcode": "CO12 4EN",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HARWICH",
+        "postcode": "CO12 4EN",
+        "B7": 191.9
+      }
+    },
+    "HASTINGS": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "ESSAR TOWER HILL SERVICE STATION",
+        "postcode": "TN35 5LZ",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR TOWER HILL SERVICE STATION",
+        "postcode": "TN35 5LZ",
+        "B7": 189.9
+      }
+    },
+    "HEREFORDSHIRE": {
+      "station_count": 13,
+      "avg_E10": 173.7,
+      "avg_B7": 196.0,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP LEOMINSTER",
+        "postcode": "HR6 0DQ",
+        "E10": 181.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL CO-OP LEOMINSTER",
+        "postcode": "HR6 0DQ",
+        "B7": 199.9
+      }
+    },
+    "HERTFORDSHIRE": {
+      "station_count": 70,
+      "avg_E10": 173.8,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "SOUTH MIMMS SF CONNECT MWSA",
+        "postcode": "EN6 3QQ",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL BALDOCK",
+        "postcode": "SG7 5TR",
+        "B7": 205.9
+      }
+    },
+    "HERTFORSHIRE": {
+      "station_count": 2,
+      "avg_E10": 168.7,
+      "avg_B7": 202.3,
+      "most_expensive_E10": {
+        "name": "EG CHESHAM PFS",
+        "postcode": "HP5 3PG",
+        "E10": 168.7
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK SOUTH MIMMS TRUCKSTOP",
+        "postcode": "EN6 3NE",
+        "B7": 214.9
+      }
+    },
+    "HETFORDSHIRE": {
+      "station_count": 1,
+      "avg_E10": 159.9,
+      "avg_B7": 185.9,
+      "most_expensive_E10": {
+        "name": "PGG KINGS LANGLEY",
+        "postcode": "WD4 8AL",
+        "E10": 159.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG KINGS LANGLEY",
+        "postcode": "WD4 8AL",
+        "B7": 185.9
+      }
+    },
+    "HEXHAM": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "BELLINGHAM SERVICES",
+        "postcode": "NE48 2BS",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "BELLINGHAM SERVICES",
+        "postcode": "NE48 2BS",
+        "B7": 196.9
+      }
+    },
+    "HIGH PEAK": {
+      "station_count": 1,
+      "avg_E10": 169.7,
+      "avg_B7": 191.7,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS CHAPEL EN LE FRITH",
+        "postcode": "SK23 0HZ",
+        "E10": 169.7
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS CHAPEL EN LE FRITH",
+        "postcode": "SK23 0HZ",
+        "B7": 191.7
+      }
+    },
+    "HIGH WYCOMBE": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HIGH WYCOMBE",
+        "postcode": "HP13 5HG",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HIGH WYCOMBE",
+        "postcode": "HP13 5HG",
+        "B7": 191.9
+      }
+    },
+    "HIGHLAND": {
+      "station_count": 5,
+      "avg_E10": 176.7,
+      "avg_B7": 199.7,
+      "most_expensive_E10": {
+        "name": "LAIDE POST OFFICE & GENERAL STORES",
+        "postcode": "IV22 2NB",
+        "E10": 178.0
+      },
+      "most_expensive_B7": {
+        "name": "LONGMAN SF CONNECT",
+        "postcode": "IV1 1RY",
+        "B7": 199.9
+      }
+    },
+    "HILLINGDON": {
+      "station_count": 2,
+      "avg_E10": 175.4,
+      "avg_B7": 198.4,
+      "most_expensive_E10": {
+        "name": "HILLINGDON SF CONNECT",
+        "postcode": "UB10 0LQ",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "FLYING RED HORSE SF CONNECT",
+        "postcode": "UB9 4DG",
+        "B7": 198.9
+      }
+    },
+    "HOLYHEAD": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HOLYHEAD",
+        "postcode": "LL65 2UQ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HOLYHEAD",
+        "postcode": "LL65 2UQ",
+        "B7": 191.9
+      }
+    },
+    "HOUNSLOW": {
+      "station_count": 3,
+      "avg_E10": 174.9,
+      "avg_B7": 199.2,
+      "most_expensive_E10": {
+        "name": "ASHFORD SF CONNECT",
+        "postcode": "TW15 1RA",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "CRANFORD SF CONNECT",
+        "postcode": "TW5 9BA",
+        "B7": 199.9
+      }
+    },
+    "HUDDERSFIELD": {
+      "station_count": 2,
+      "avg_E10": 165.4,
+      "avg_B7": 188.4,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MELTHAM",
+        "postcode": "HD9 5NX",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MELTHAM",
+        "postcode": "HD9 5NX",
+        "B7": 189.9
+      }
+    },
+    "HULL": {
+      "station_count": 2,
+      "avg_E10": 169.4,
+      "avg_B7": 193.4,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ANLABY",
+        "postcode": "HU10 6RJ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ANLABY",
+        "postcode": "HU10 6RJ",
+        "B7": 193.9
+      }
+    },
+    "HUMBERSIDE": {
+      "station_count": 8,
+      "avg_E10": 174.5,
+      "avg_B7": 197.0,
+      "most_expensive_E10": {
+        "name": "SHELL GRAND DALE",
+        "postcode": "HU14 3HG",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL GRAND DALE",
+        "postcode": "HU14 3HG",
+        "B7": 199.9
+      }
+    },
+    "HUNTINGDON": {
+      "station_count": 1,
+      "avg_E10": 170.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "ESSAR RAMSEY SERVICE STATION",
+        "postcode": "PE26 1SA",
+        "E10": 170.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR RAMSEY SERVICE STATION",
+        "postcode": "PE26 1SA",
+        "B7": 191.9
+      }
+    },
+    "HYDE": {
+      "station_count": 2,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG SHOWGROUND",
+        "postcode": "SK14 6NG",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG SHOWGROUND",
+        "postcode": "SK14 6NG",
+        "B7": 196.9
+      }
+    },
+    "INVENESS-SHIRE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS FORT WILLIAM",
+        "postcode": "PH33 6AN",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS FORT WILLIAM",
+        "postcode": "PH33 6AN",
+        "B7": 195.9
+      }
+    },
+    "INVERCLYDE": {
+      "station_count": 1,
+      "avg_E10": 169.7,
+      "avg_B7": 193.7,
+      "most_expensive_E10": {
+        "name": "WEMYSS BAY FUEL EXPRESS AUTOMAT",
+        "postcode": "PA18 6AR",
+        "E10": 169.7
+      },
+      "most_expensive_B7": {
+        "name": "WEMYSS BAY FUEL EXPRESS AUTOMAT",
+        "postcode": "PA18 6AR",
+        "B7": 193.7
+      }
+    },
+    "INVERNESS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS INVERNESS",
+        "postcode": "IV2 3PX",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS INVERNESS",
+        "postcode": "IV2 3PX",
+        "B7": 193.9
+      }
+    },
+    "INVERNESS-SHIRE": {
+      "station_count": 6,
+      "avg_E10": 176.7,
+      "avg_B7": 199.4,
+      "most_expensive_E10": {
+        "name": "SHELL FORT WILLIAM",
+        "postcode": "PH33 6TJ",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG KESSOCK",
+        "postcode": "IV1 1SD",
+        "B7": 199.9
+      }
+    },
+    "IRVINE": {
+      "station_count": 2,
+      "avg_E10": 171.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG GIRDLE TOLL",
+        "postcode": "KA11 2DJ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ANNICK",
+        "postcode": "KA11 4HJ",
+        "B7": 197.9
+      }
+    },
+    "ISLE OF SHEPPEY": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS SHEPPEY",
+        "postcode": "ME11 5AR",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS SHEPPEY",
+        "postcode": "ME11 5AR",
+        "B7": 194.9
+      }
+    },
+    "ISLE OF WIGHT": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ISLE OF WIGHT LAKE",
+        "postcode": "PO36 9PA",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ISLE OF WIGHT LAKE",
+        "postcode": "PO36 9PA",
+        "B7": 195.9
+      }
+    },
+    "KENDAL": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "WHITESTILES SERVICE STATION",
+        "postcode": "LA9 6DL",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "WHITESTILES SERVICE STATION",
+        "postcode": "LA9 6DL",
+        "B7": 191.9
+      }
+    },
+    "KENNFORD  DEVON": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG THE WINNING POST",
+        "postcode": "EX6 7XS",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG THE WINNING POST",
+        "postcode": "EX6 7XS",
+        "B7": 199.9
+      }
+    },
+    "KENT": {
+      "station_count": 129,
+      "avg_E10": 175.9,
+      "avg_B7": 198.1,
+      "most_expensive_E10": {
+        "name": "MEDWAY WEST SERVICE AREA",
+        "postcode": "ME8 8PQ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "MEDWAY WEST SERVICE AREA",
+        "postcode": "ME8 8PQ",
+        "B7": 217.9
+      }
+    },
+    "KINCARDINESHIRE": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG MILL INN",
+        "postcode": "AB39 2JJ",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MILL INN",
+        "postcode": "AB39 2JJ",
+        "B7": 197.9
+      }
+    },
+    "KINGS LYNN AND WEST NORFOLK": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "ROYTHORNE AND SON LTD",
+        "postcode": "PE30 3QB",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ROYTHORNE AND SON LTD",
+        "postcode": "PE30 3QB",
+        "B7": 197.9
+      }
+    },
+    "KINGSTON UPON HULL": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SUTTON ROAD SERVICE STATION",
+        "postcode": "HU7 0AG",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SUTTON ROAD SERVICE STATION",
+        "postcode": "HU7 0AG",
+        "B7": 193.9
+      }
+    },
+    "KINGSTON UPON HULL, CITY OF": {
+      "station_count": 1,
+      "avg_E10": 169.7,
+      "avg_B7": 192.7,
+      "most_expensive_E10": {
+        "name": "HULL NORTHPOINT FUEL EXPRESS AUTOMAT",
+        "postcode": "HU7 4EF",
+        "E10": 169.7
+      },
+      "most_expensive_B7": {
+        "name": "HULL NORTHPOINT FUEL EXPRESS AUTOMAT",
+        "postcode": "HU7 4EF",
+        "B7": 192.7
+      }
+    },
+    "KIRKLEES": {
+      "station_count": 2,
+      "avg_E10": 168.4,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "UPPER BATLEY SS",
+        "postcode": "WF17 5LW",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "UPPER BATLEY SS",
+        "postcode": "WF17 5LW",
+        "B7": 195.9
+      }
+    },
+    "KNOWSLEY": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 188.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS KIRKBY",
+        "postcode": "L32 8US",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS KIRKBY",
+        "postcode": "L32 8US",
+        "B7": 188.9
+      }
+    },
+    "LAKE DISTRICT": {
+      "station_count": 2,
+      "avg_E10": 171.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG INGS",
+        "postcode": "LA8 9PY",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG INGS",
+        "postcode": "LA8 9PY",
+        "B7": 197.9
+      }
+    },
+    "LANACASHIRE": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 205.9,
+      "most_expensive_E10": {
+        "name": "PGG BLACKPOOL",
+        "postcode": "FY3 9TN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG BLACKPOOL",
+        "postcode": "FY3 9TN",
+        "B7": 205.9
+      }
+    },
+    "LANARK": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "KIRKMUIRHILL SERVICE STATION",
+        "postcode": "ML11 9RE",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "KIRKMUIRHILL SERVICE STATION",
+        "postcode": "ML11 9RE",
+        "B7": 194.9
+      }
+    },
+    "LANARKSHIRE": {
+      "station_count": 35,
+      "avg_E10": 173.5,
+      "avg_B7": 197.5,
+      "most_expensive_E10": {
+        "name": "SHELL GLEN",
+        "postcode": "G46 7HT",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL GLEN",
+        "postcode": "G46 7HT",
+        "B7": 199.9
+      }
+    },
+    "LANCASHIRE": {
+      "station_count": 99,
+      "avg_E10": 173.3,
+      "avg_B7": 196.4,
+      "most_expensive_E10": {
+        "name": "BIRCH WEST SERVICE WEST",
+        "postcode": "OL10 2QH",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "BIRCH WEST SERVICE WEST",
+        "postcode": "OL10 2QH",
+        "B7": 217.9
+      }
+    },
+    "LANCS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "WOODLAND SERVICE STATION",
+        "postcode": "FY5 4BL",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "WOODLAND SERVICE STATION",
+        "postcode": "FY5 4BL",
+        "B7": 193.9
+      }
+    },
+    "LAUDER": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "LAUDER SERVICE STATION",
+        "postcode": "TD2 6TW",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "LAUDER SERVICE STATION",
+        "postcode": "TD2 6TW",
+        "B7": 193.9
+      }
+    },
+    "LEAMINGTON SPA": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG CUBBINGTON",
+        "postcode": "CV32 7HY",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CUBBINGTON",
+        "postcode": "CV32 7HY",
+        "B7": 196.9
+      }
+    },
+    "LEEDS": {
+      "station_count": 9,
+      "avg_E10": 166.5,
+      "avg_B7": 190.9,
+      "most_expensive_E10": {
+        "name": "MFG ROYDSBECK",
+        "postcode": "LS12 6AN",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "CALDERVIEW SSTN",
+        "postcode": "LS10 1QR",
+        "B7": 194.9
+      }
+    },
+    "LEICESTER": {
+      "station_count": 4,
+      "avg_E10": 171.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "TGC - NEEDWOOD",
+        "postcode": "DE13 9PD",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - SYSTON",
+        "postcode": "LE7 1PA",
+        "B7": 197.9
+      }
+    },
+    "LEICESTERSHIRE": {
+      "station_count": 64,
+      "avg_E10": 174.0,
+      "avg_B7": 196.2,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK LEICESTER FOREST EAST NORTH",
+        "postcode": "LE3 3GB",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK LEICESTER FOREST EAST NORTH",
+        "postcode": "LE3 3GB",
+        "B7": 214.9
+      }
+    },
+    "LEYBURN": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "AYSGARTH SERVICE STATION",
+        "postcode": "DL8 3AD",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "AYSGARTH SERVICE STATION",
+        "postcode": "DL8 3AD",
+        "B7": 196.9
+      }
+    },
+    "LICHFIELD": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "RONTEC MUCKLEY CORNER",
+        "postcode": "WS14 0BH",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC MUCKLEY CORNER",
+        "postcode": "WS14 0BH",
+        "B7": 193.9
+      }
+    },
+    "LINCOLNSHIRE": {
+      "station_count": 52,
+      "avg_E10": 173.4,
+      "avg_B7": 195.8,
+      "most_expensive_E10": {
+        "name": "GRANTHAM SERVICE AREA",
+        "postcode": "NG32 2AB",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "GRANTHAM SERVICE AREA",
+        "postcode": "NG32 2AB",
+        "B7": 217.9
+      }
+    },
+    "LISKEARD": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS LISKEARD",
+        "postcode": "PL14 3PR",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS LISKEARD",
+        "postcode": "PL14 3PR",
+        "B7": 193.9
+      }
+    },
+    "LIVERPOOL": {
+      "station_count": 9,
+      "avg_E10": 169.1,
+      "avg_B7": 191.7,
+      "most_expensive_E10": {
+        "name": "BP HARVEST ENERGY AINTREE",
+        "postcode": "L9 0EX",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "BP HARVEST ENERGY AINTREE",
+        "postcode": "L9 0EX",
+        "B7": 194.9
+      }
+    },
+    "LLANELLI": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG PANTEG",
+        "postcode": "SA15 3TF",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PANTEG",
+        "postcode": "SA15 3TF",
+        "B7": 193.9
+      }
+    },
+    "LONDON": {
+      "station_count": 116,
+      "avg_E10": 174.1,
+      "avg_B7": 197.5,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK LONDON GATEWAY",
+        "postcode": "NW7 3HU",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK LONDON GATEWAY",
+        "postcode": "NW7 3HU",
+        "B7": 214.9
+      }
+    },
+    "LONDON, CITY OF": {
+      "station_count": 19,
+      "avg_E10": 174.1,
+      "avg_B7": 197.0,
+      "most_expensive_E10": {
+        "name": "WESTERN AVENUE SF CONNECT",
+        "postcode": "W3 0TE",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "WESTERN AVENUE SF CONNECT",
+        "postcode": "W3 0TE",
+        "B7": 199.9
+      }
+    },
+    "LOTHIAN": {
+      "station_count": 4,
+      "avg_E10": 172.4,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG MONKTONHALL",
+        "postcode": "EH21 8RE",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MONKTONHALL",
+        "postcode": "EH21 8RE",
+        "B7": 199.9
+      }
+    },
+    "LOUGHBOROUGH": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS LOUGHBOROUGH",
+        "postcode": "LE11 4RZ",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS LOUGHBOROUGH",
+        "postcode": "LE11 4RZ",
+        "B7": 189.9
+      }
+    },
+    "MAIDSTONE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MAIDSTONE",
+        "postcode": "ME15 9GD",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MAIDSTONE",
+        "postcode": "ME15 9GD",
+        "B7": 193.9
+      }
+    },
+    "MALVERN HILLS": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "PJ NICHOLLS LTD MALVERN",
+        "postcode": "WR14 2QZ",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "PJ NICHOLLS LTD MALVERN",
+        "postcode": "WR14 2QZ",
+        "B7": 194.9
+      }
+    },
+    "MANCHESTER": {
+      "station_count": 24,
+      "avg_E10": 169.7,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "EG AUDENSHAW PFS",
+        "postcode": "M34 5SP",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "EG AUDENSHAW PFS",
+        "postcode": "M34 5SP",
+        "B7": 198.9
+      }
+    },
+    "MANSFIELD": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MANSFIELD WOODHOUSE",
+        "postcode": "NG19 9LA",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MANSFIELD WOODHOUSE",
+        "postcode": "NG19 9LA",
+        "B7": 189.9
+      }
+    },
+    "MEDWAY": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG GILLINGHAM",
+        "postcode": "ME7 4NA",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GILLINGHAM",
+        "postcode": "ME7 4NA",
+        "B7": 199.9
+      }
+    },
+    "MERSEYSIDE": {
+      "station_count": 68,
+      "avg_E10": 172.5,
+      "avg_B7": 194.7,
+      "most_expensive_E10": {
+        "name": "SHELL CARLETT",
+        "postcode": "CH62 0BZ",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG RELIANCE",
+        "postcode": "PR8 3BJ",
+        "B7": 205.9
+      }
+    },
+    "MERTHYR TYDFIL": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "TREHARRIS SERVICE STATION",
+        "postcode": "CF46 5EY",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "TREHARRIS SERVICE STATION",
+        "postcode": "CF46 5EY",
+        "B7": 197.9
+      }
+    },
+    "MID GLAMORGAN": {
+      "station_count": 13,
+      "avg_E10": 173.0,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "MFG ABERCYNON",
+        "postcode": "CF45 4YX",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL BARRY",
+        "postcode": "CF62 7LT",
+        "B7": 197.9
+      }
+    },
+    "MID-LOTHIAN": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG LOTHIANBURN",
+        "postcode": "EH10 7DU",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG LOTHIANBURN",
+        "postcode": "EH10 7DU",
+        "B7": 197.9
+      }
+    },
+    "MIDDLESBOROUGH": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MIDDLESBOROUGH",
+        "postcode": "TS3 7RP",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MIDDLESBOROUGH",
+        "postcode": "TS3 7RP",
+        "B7": 191.9
+      }
+    },
+    "MIDDLESEX": {
+      "station_count": 32,
+      "avg_E10": 175.6,
+      "avg_B7": 199.0,
+      "most_expensive_E10": {
+        "name": "HESTON WEST SERVICE AREA",
+        "postcode": "TW5 9NB",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "HESTON WEST SERVICE AREA",
+        "postcode": "TW5 9NB",
+        "B7": 217.9
+      }
+    },
+    "MIDLANDS": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "TOTAL HARVEST ENERGY LYNWOOD",
+        "postcode": "B45 8ES",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "TOTAL HARVEST ENERGY LYNWOOD",
+        "postcode": "B45 8ES",
+        "B7": 195.9
+      }
+    },
+    "MIDLOTHIAN": {
+      "station_count": 13,
+      "avg_E10": 172.2,
+      "avg_B7": 193.8,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP DREGHORN",
+        "postcode": "EH13 9QR",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL LEITH",
+        "postcode": "EH6 7LE",
+        "B7": 199.9
+      }
+    },
+    "MILTON KEYNES": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MILTON KEYNES WESTCROFT",
+        "postcode": "MK4 4DD",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MILTON KEYNES WESTCROFT",
+        "postcode": "MK4 4DD",
+        "B7": 191.9
+      }
+    },
+    "MOLD": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "LOGGERHEAD SERVICE STATION",
+        "postcode": "CH7 5SA",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "LOGGERHEAD SERVICE STATION",
+        "postcode": "CH7 5SA",
+        "B7": 191.9
+      }
+    },
+    "MONMOUTHSHIRE": {
+      "station_count": 5,
+      "avg_E10": 172.5,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "CALDECOT FUEL EXPRESS AUTOMAT",
+        "postcode": "NP26 4XB",
+        "E10": 173.7
+      },
+      "most_expensive_B7": {
+        "name": "ASCONA BRECON ROAD SERVICE STATION",
+        "postcode": "NP7 7RB",
+        "B7": 196.9
+      }
+    },
+    "MORAY": {
+      "station_count": 2,
+      "avg_E10": 171.9,
+      "avg_B7": 198.9,
+      "most_expensive_E10": {
+        "name": "ASCONA BUCKIE SERVICE STATION",
+        "postcode": "AB56 4AD",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "KEITH SERVICE STATION",
+        "postcode": "AB55 5ED",
+        "B7": 199.9
+      }
+    },
+    "MORAYSHIRE": {
+      "station_count": 3,
+      "avg_E10": 173.2,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG GRESHOP",
+        "postcode": "IV36 2EY",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GRESHOP",
+        "postcode": "IV36 2EY",
+        "B7": 199.9
+      }
+    },
+    "MORPETH": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS MORPETH",
+        "postcode": "NE61 1ST",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS MORPETH",
+        "postcode": "NE61 1ST",
+        "B7": 195.9
+      }
+    },
+    "N YORKS": {
+      "station_count": 2,
+      "avg_E10": 196.9,
+      "avg_B7": 217.9,
+      "most_expensive_E10": {
+        "name": "BARTON PARK SERVICE AREA",
+        "postcode": "DL10 6NA",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "BARTON PARK SERVICE AREA",
+        "postcode": "DL10 6NA",
+        "B7": 217.9
+      }
+    },
+    "NE LINCOLNSHIRE": {
+      "station_count": 2,
+      "avg_E10": 170.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG BUCANEER",
+        "postcode": "DN35 8AJ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CLEETHORPES",
+        "postcode": "DN31 3HW",
+        "B7": 191.9
+      }
+    },
+    "NEATH": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG PORT TALBOT",
+        "postcode": "SA12 7PE",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PORT TALBOT",
+        "postcode": "SA12 7PE",
+        "B7": 196.9
+      }
+    },
+    "NEWARK": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK NEWARK",
+        "postcode": "NG23 6JE",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK NEWARK",
+        "postcode": "NG23 6JE",
+        "B7": 194.9
+      }
+    },
+    "NEWCASTLE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "CHAPEL HOUSE SERVICE STATION",
+        "postcode": "NE5 1DQ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "CHAPEL HOUSE SERVICE STATION",
+        "postcode": "NE5 1DQ",
+        "B7": 194.9
+      }
+    },
+    "NEWCASTLE  UPON TYNE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "DENTON BURN FILLING STATION",
+        "postcode": "NE15 7DF",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "DENTON BURN FILLING STATION",
+        "postcode": "NE15 7DF",
+        "B7": 193.9
+      }
+    },
+    "NEWCASTLE UPON TYNE": {
+      "station_count": 6,
+      "avg_E10": 171.2,
+      "avg_B7": 194.2,
+      "most_expensive_E10": {
+        "name": "MFG AIRPORT WAY",
+        "postcode": "NE5 3HX",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG AIRPORT WAY",
+        "postcode": "NE5 3HX",
+        "B7": 195.9
+      }
+    },
+    "NEWPORT": {
+      "station_count": 2,
+      "avg_E10": 171.4,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MALPAS SF CONNECT",
+        "postcode": "NP20 6NF",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MALPAS SF CONNECT",
+        "postcode": "NP20 6NF",
+        "B7": 193.9
+      }
+    },
+    "NEWPORT-ON-TAY": {
+      "station_count": 1,
+      "avg_E10": 177.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "EG ABERCRAIG PFS",
+        "postcode": "DD6 8RB",
+        "E10": 177.9
+      },
+      "most_expensive_B7": {
+        "name": "EG ABERCRAIG PFS",
+        "postcode": "DD6 8RB",
+        "B7": 197.9
+      }
+    },
+    "NEWRY MOURNE AND DOWN": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "COLLEGE FILLING STATION",
+        "postcode": "BT30 6LZ",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "COLLEGE FILLING STATION",
+        "postcode": "BT30 6LZ",
+        "B7": 193.9
+      }
+    },
+    "NEWTON AYCLIFFE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "WOODHAM SERVICES",
+        "postcode": "DL5 4UU",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "WOODHAM SERVICES",
+        "postcode": "DL5 4UU",
+        "B7": 191.9
+      }
+    },
+    "NEWTON STEWART": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "CREEBRIDGE SERVICE STATION",
+        "postcode": "DG8 6NP",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "CREEBRIDGE SERVICE STATION",
+        "postcode": "DG8 6NP",
+        "B7": 195.9
+      }
+    },
+    "NORFOLK": {
+      "station_count": 43,
+      "avg_E10": 173.2,
+      "avg_B7": 196.3,
+      "most_expensive_E10": {
+        "name": "SHELL WAITROSE WYMONDHAM",
+        "postcode": "NR18 0SH",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - SWAFFHAM",
+        "postcode": "PE37 7TZ",
+        "B7": 200.9
+      }
+    },
+    "NORTH AYRSHIRE": {
+      "station_count": 2,
+      "avg_E10": 175.7,
+      "avg_B7": 194.2,
+      "most_expensive_E10": {
+        "name": "A&C CAMERON T A BLACKWATERFOOT GARAGE",
+        "postcode": "KA27 8ES",
+        "E10": 179.4
+      },
+      "most_expensive_B7": {
+        "name": "A&C CAMERON T A BLACKWATERFOOT GARAGE",
+        "postcode": "KA27 8ES",
+        "B7": 195.4
+      }
+    },
+    "NORTH DEVON": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG UMBERLEIGH",
+        "postcode": "EX37 9DX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG UMBERLEIGH",
+        "postcode": "EX37 9DX",
+        "B7": 192.9
+      }
+    },
+    "NORTH EAST LINCOLNSHIRE": {
+      "station_count": 1,
+      "avg_E10": 164.9,
+      "avg_B7": 190.9,
+      "most_expensive_E10": {
+        "name": "JET REFINERY FILLING STATION",
+        "postcode": "DN40 3DJ",
+        "E10": 164.9
+      },
+      "most_expensive_B7": {
+        "name": "JET REFINERY FILLING STATION",
+        "postcode": "DN40 3DJ",
+        "B7": 190.9
+      }
+    },
+    "NORTH HUMBERSIDE": {
+      "station_count": 2,
+      "avg_E10": 169.9,
+      "avg_B7": 193.4,
+      "most_expensive_E10": {
+        "name": "BEVERLEY SERVICE STATION",
+        "postcode": "HU17 9DH",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HULL",
+        "postcode": "HU9 3JA",
+        "B7": 193.9
+      }
+    },
+    "NORTH KESTEVEN": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "J T LORD & SON SLEAFORD LTD",
+        "postcode": "NG34 7HH",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "J T LORD & SON SLEAFORD LTD",
+        "postcode": "NG34 7HH",
+        "B7": 197.9
+      }
+    },
+    "NORTH LANARKSHIRE": {
+      "station_count": 8,
+      "avg_E10": 176.5,
+      "avg_B7": 195.8,
+      "most_expensive_E10": {
+        "name": "HARTHILL NORTH SF CONNECT MWSA",
+        "postcode": "ML7 5TT",
+        "E10": 191.9
+      },
+      "most_expensive_B7": {
+        "name": "HARTHILL NORTH SF CONNECT MWSA",
+        "postcode": "ML7 5TT",
+        "B7": 199.9
+      }
+    },
+    "NORTH LANARSHIRE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS AIRDRIE",
+        "postcode": "ML6 6EF",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS AIRDRIE",
+        "postcode": "ML6 6EF",
+        "B7": 192.9
+      }
+    },
+    "NORTH LINCOLNSHIRE": {
+      "station_count": 4,
+      "avg_E10": 169.7,
+      "avg_B7": 191.2,
+      "most_expensive_E10": {
+        "name": "RONTEC EAST MARSH",
+        "postcode": "DN32 7DX",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "EG SCUNTHORPE PFS",
+        "postcode": "DN16 2AQ",
+        "B7": 192.9
+      }
+    },
+    "NORTH SHIELDS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "CHIRTON MAIN SERVICES,",
+        "postcode": "NE29 0JZ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "CHIRTON MAIN SERVICES,",
+        "postcode": "NE29 0JZ",
+        "B7": 193.9
+      }
+    },
+    "NORTH SOMERSET": {
+      "station_count": 3,
+      "avg_E10": 173.2,
+      "avg_B7": 195.2,
+      "most_expensive_E10": {
+        "name": "MFG SALTHOUSE",
+        "postcode": "BS21 7TU",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG SALTHOUSE",
+        "postcode": "BS21 7TU",
+        "B7": 197.9
+      }
+    },
+    "NORTH YORKS": {
+      "station_count": 1,
+      "avg_E10": 179.9,
+      "avg_B7": 214.9,
+      "most_expensive_E10": {
+        "name": "LEEMING BAR SERVICE AREA",
+        "postcode": "DL8 1DT",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "LEEMING BAR SERVICE AREA",
+        "postcode": "DL8 1DT",
+        "B7": 214.9
+      }
+    },
+    "NORTH YORKSHIRE": {
+      "station_count": 51,
+      "avg_E10": 169.8,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP GRISTHWAITE",
+        "postcode": "YO7 3HN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL CO-OP GRISTHWAITE",
+        "postcode": "YO7 3HN",
+        "B7": 199.9
+      }
+    },
+    "NORTHAMPTONSHIRE": {
+      "station_count": 40,
+      "avg_E10": 177.4,
+      "avg_B7": 198.8,
+      "most_expensive_E10": {
+        "name": "WATFORD GAP NORTH CONNECT MWSA",
+        "postcode": "NN6 7UZ",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WATFORD GAP NORTH CONNECT MWSA",
+        "postcode": "NN6 7UZ",
+        "B7": 214.9
+      }
+    },
+    "NORTHANTS": {
+      "station_count": 3,
+      "avg_E10": 174.2,
+      "avg_B7": 198.2,
+      "most_expensive_E10": {
+        "name": "EG CORBY NORTH PFS",
+        "postcode": "NN17 2AE",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC WELLINGBOROUGH",
+        "postcode": "NN8 2DU",
+        "B7": 198.9
+      }
+    },
+    "NORTHUMBERLAND": {
+      "station_count": 22,
+      "avg_E10": 171.7,
+      "avg_B7": 196.5,
+      "most_expensive_E10": {
+        "name": "PGG NORTHERN GATEWAY",
+        "postcode": "TD15 1QQ",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG ASHINGTON",
+        "postcode": "NE63 0TQ",
+        "B7": 205.9
+      }
+    },
+    "NORWICH": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG OVAL",
+        "postcode": "NR5 0SY",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG OVAL",
+        "postcode": "NR5 0SY",
+        "B7": 194.9
+      }
+    },
+    "NOTTINGHAM": {
+      "station_count": 7,
+      "avg_E10": 167.0,
+      "avg_B7": 190.6,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK HICKLING",
+        "postcode": "LE14 3QG",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG OLD BASFORD",
+        "postcode": "NG6 0JW",
+        "B7": 193.9
+      }
+    },
+    "NOTTINGHAMSHIRE": {
+      "station_count": 53,
+      "avg_E10": 172.9,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "TROWELL NORTH SERVICE AREA",
+        "postcode": "NG9 3PL",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "TROWELL NORTH SERVICE AREA",
+        "postcode": "NG9 3PL",
+        "B7": 217.9
+      }
+    },
+    "NOTTS": {
+      "station_count": 2,
+      "avg_E10": 171.9,
+      "avg_B7": 194.4,
+      "most_expensive_E10": {
+        "name": "RONTEC DALESIDE ROAD",
+        "postcode": "NG2 3GG",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC DALESIDE ROAD",
+        "postcode": "NG2 3GG",
+        "B7": 194.9
+      }
+    },
+    "NR BRIDGEND": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG TONDU",
+        "postcode": "CF32 9BT",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG TONDU",
+        "postcode": "CF32 9BT",
+        "B7": 193.9
+      }
+    },
+    "OAKHAM": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 188.9,
+      "most_expensive_E10": {
+        "name": "EG RAM JAM PFS",
+        "postcode": "LE15 7QX",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "EG RAM JAM PFS",
+        "postcode": "LE15 7QX",
+        "B7": 188.9
+      }
+    },
+    "OLDHAM": {
+      "station_count": 1,
+      "avg_E10": 164.9,
+      "avg_B7": 187.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS OLDHAM",
+        "postcode": "OL9 7LD",
+        "E10": 164.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS OLDHAM",
+        "postcode": "OL9 7LD",
+        "B7": 187.9
+      }
+    },
+    "ORDNANCE SURVEY": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "STAR FUELS",
+        "postcode": "BN10 8QS",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "STAR FUELS",
+        "postcode": "BN10 8QS",
+        "B7": 192.9
+      }
+    },
+    "OXFORDSHIRE": {
+      "station_count": 28,
+      "avg_E10": 174.2,
+      "avg_B7": 197.1,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK OXFORD",
+        "postcode": "OX33 1LJ",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK OXFORD",
+        "postcode": "OX33 1LJ",
+        "B7": 214.9
+      }
+    },
+    "PAISLEY": {
+      "station_count": 2,
+      "avg_E10": 167.4,
+      "avg_B7": 192.4,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS PAISLEY FALSIDE ROAD",
+        "postcode": "PA2 6QH",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS PAISLEY FALSIDE ROAD",
+        "postcode": "PA2 6QH",
+        "B7": 192.9
+      }
+    },
+    "PEMBROKESHIRE": {
+      "station_count": 7,
+      "avg_E10": 169.6,
+      "avg_B7": 191.8,
+      "most_expensive_E10": {
+        "name": "LETTERSTON FILLING STATION",
+        "postcode": "SA62 5UA",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "LETTERSTON FILLING STATION",
+        "postcode": "SA62 5UA",
+        "B7": 195.9
+      }
+    },
+    "PERTH & KINROSS": {
+      "station_count": 2,
+      "avg_E10": 171.7,
+      "avg_B7": 196.7,
+      "most_expensive_E10": {
+        "name": "BLAIR ATHOLL FUEL EXPRESS AUTOMAT",
+        "postcode": "PH18 5SX",
+        "E10": 171.7
+      },
+      "most_expensive_B7": {
+        "name": "BLAIR ATHOLL FUEL EXPRESS AUTOMAT",
+        "postcode": "PH18 5SX",
+        "B7": 196.7
+      }
+    },
+    "PERTH AND KINROSS": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "PERTH SERVICES SF CONNECT",
+        "postcode": "PH1 3GA",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "PERTH SERVICES SF CONNECT",
+        "postcode": "PH1 3GA",
+        "B7": 195.9
+      }
+    },
+    "PERTHSHIRE": {
+      "station_count": 7,
+      "avg_E10": 178.2,
+      "avg_B7": 200.3,
+      "most_expensive_E10": {
+        "name": "KINROSS SERVICE AREA",
+        "postcode": "KY13 0NQ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "KINROSS SERVICE AREA",
+        "postcode": "KY13 0NQ",
+        "B7": 217.9
+      }
+    },
+    "PETERBOROUGH": {
+      "station_count": 5,
+      "avg_E10": 171.1,
+      "avg_B7": 193.5,
+      "most_expensive_E10": {
+        "name": "MFG MARKET DEEPING",
+        "postcode": "PE6 9LA",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WOODSTON",
+        "postcode": "PE2 9QP",
+        "B7": 194.9
+      }
+    },
+    "PLYMOUTH": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS PLYMSTOCK",
+        "postcode": "PL9 7BH",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS PLYMSTOCK",
+        "postcode": "PL9 7BH",
+        "B7": 191.9
+      }
+    },
+    "PORT TALBOT": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS PORT TALBOT BAGLAN",
+        "postcode": "SA12 7DA",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS PORT TALBOT BAGLAN",
+        "postcode": "SA12 7DA",
+        "B7": 191.9
+      }
+    },
+    "POWYS": {
+      "station_count": 15,
+      "avg_E10": 170.7,
+      "avg_B7": 195.2,
+      "most_expensive_E10": {
+        "name": "BRECON SERVICE STATION",
+        "postcode": "LD3 8BY",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "BRECON SERVICE STATION",
+        "postcode": "LD3 8BY",
+        "B7": 199.9
+      }
+    },
+    "PRESTON": {
+      "station_count": 3,
+      "avg_E10": 170.2,
+      "avg_B7": 192.6,
+      "most_expensive_E10": {
+        "name": "HILLCREST SERVICE STATION",
+        "postcode": "PR2 3TY",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "HILLCREST SERVICE STATION",
+        "postcode": "PR2 3TY",
+        "B7": 194.9
+      }
+    },
+    "PWLLHELI": {
+      "station_count": 2,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "LLANBEDROG SERVICE STATION",
+        "postcode": "LL53 7TN",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "LLANBEDROG SERVICE STATION",
+        "postcode": "LL53 7TN",
+        "B7": 191.9
+      }
+    },
+    "RADCLIFFE ON TRENT": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK FOSSEWAY",
+        "postcode": "NG12 2JU",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK FOSSEWAY",
+        "postcode": "NG12 2JU",
+        "B7": 189.9
+      }
+    },
+    "RADSTOCK": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG ELM TREE",
+        "postcode": "BA3 3UR",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG ELM TREE",
+        "postcode": "BA3 3UR",
+        "B7": 199.9
+      }
+    },
+    "REDDITCH": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS REDDITCH",
+        "postcode": "B98 0SW",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS REDDITCH",
+        "postcode": "B98 0SW",
+        "B7": 189.9
+      }
+    },
+    "RENFREWSHIRE": {
+      "station_count": 8,
+      "avg_E10": 169.3,
+      "avg_B7": 193.3,
+      "most_expensive_E10": {
+        "name": "MFG GLASGOW AIRPORT",
+        "postcode": "PA3 2TH",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GLASGOW AIRPORT",
+        "postcode": "PA3 2TH",
+        "B7": 199.9
+      }
+    },
+    "RHONDDA": {
+      "station_count": 2,
+      "avg_E10": 172.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG PORTH",
+        "postcode": "CF39 9SH",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PORTH",
+        "postcode": "CF39 9SH",
+        "B7": 197.9
+      }
+    },
+    "RHONDDA CYNON TAF": {
+      "station_count": 3,
+      "avg_E10": 170.9,
+      "avg_B7": 196.2,
+      "most_expensive_E10": {
+        "name": "TONYREFAIL SERVICE STATION",
+        "postcode": "CF39 8AF",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "TONYREFAIL SERVICE STATION",
+        "postcode": "CF39 8AF",
+        "B7": 196.9
+      }
+    },
+    "RHONDDA CYNON TAFF": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "LLANHARAN SERVICE STATION",
+        "postcode": "CF72 9NR",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "LLANHARAN SERVICE STATION",
+        "postcode": "CF72 9NR",
+        "B7": 194.9
+      }
+    },
+    "RICHMOND": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "SCORTON SERVICES",
+        "postcode": "DL10 6AB",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SCORTON SERVICES",
+        "postcode": "DL10 6AB",
+        "B7": 191.9
+      }
+    },
+    "RIPON": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "RONTEC RIPON",
+        "postcode": "HG4 2SD",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC RIPON",
+        "postcode": "HG4 2SD",
+        "B7": 194.9
+      }
+    },
+    "ROCHDALE": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "BURY ROAD SERVICE STATION",
+        "postcode": "OL11 4DG",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "BURY ROAD SERVICE STATION",
+        "postcode": "OL11 4DG",
+        "B7": 189.9
+      }
+    },
+    "ROCHESTER": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS STROOD",
+        "postcode": "ME2 2AU",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS STROOD",
+        "postcode": "ME2 2AU",
+        "B7": 191.9
+      }
+    },
+    "ROMFORD": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 187.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS GRAYS",
+        "postcode": "RM17 5XZ",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS GRAYS",
+        "postcode": "RM17 5XZ",
+        "B7": 187.9
+      }
+    },
+    "ROSS-SHIRE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ALNESS",
+        "postcode": "IV17 0UY",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ALNESS",
+        "postcode": "IV17 0UY",
+        "B7": 195.9
+      }
+    },
+    "ROTHER": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "STILES GARAGE BATTLE LTD",
+        "postcode": "TN33 0AN",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "STILES GARAGE BATTLE LTD",
+        "postcode": "TN33 0AN",
+        "B7": 192.9
+      }
+    },
+    "ROTHERHAM": {
+      "station_count": 3,
+      "avg_E10": 167.6,
+      "avg_B7": 190.6,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS ROTHERHAM PARKGATE",
+        "postcode": "S60 1TG",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS ROTHERHAM PARKGATE",
+        "postcode": "S60 1TG",
+        "B7": 191.9
+      }
+    },
+    "ROXBURGHSHIRE": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS HAWICK",
+        "postcode": "TD9 9NQ",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS HAWICK",
+        "postcode": "TD9 9NQ",
+        "B7": 191.9
+      }
+    },
+    "RUTLAND": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 182.9,
+      "most_expensive_E10": {
+        "name": "ESSAR OAKHAM SERVICE STATION",
+        "postcode": "LE15 6AX",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR OAKHAM SERVICE STATION",
+        "postcode": "LE15 6AX",
+        "B7": 182.9
+      }
+    },
+    "RYTON": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "RONTEC CRAWCROOK",
+        "postcode": "NE40 4NU",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC CRAWCROOK",
+        "postcode": "NE40 4NU",
+        "B7": 194.9
+      }
+    },
+    "SALFORD": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG SALFORD",
+        "postcode": "M50 3XB",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG SALFORD",
+        "postcode": "M50 3XB",
+        "B7": 195.9
+      }
+    },
+    "SALTBURN-BY-THE-SEA": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "SCALING DAM FILLING STATION",
+        "postcode": "TS13 4TP",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SCALING DAM FILLING STATION",
+        "postcode": "TS13 4TP",
+        "B7": 194.9
+      }
+    },
+    "SCARBOROUGH": {
+      "station_count": 4,
+      "avg_E10": 169.7,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SEAMER ROAD SERVICES",
+        "postcode": "YO12 4DH",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SEAMER ROAD SERVICES",
+        "postcode": "YO12 4DH",
+        "B7": 194.9
+      }
+    },
+    "SCOTLAND": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "EG BUCHANDYKE PFS",
+        "postcode": "G74 3LT",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "EG BUCHANDYKE PFS",
+        "postcode": "G74 3LT",
+        "B7": 194.9
+      }
+    },
+    "SCOTTISH BORDERS": {
+      "station_count": 5,
+      "avg_E10": 170.3,
+      "avg_B7": 192.1,
+      "most_expensive_E10": {
+        "name": "JEDBURGH  SERVICE STATION",
+        "postcode": "TD8 6EB",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "NEWCASTLETON FUEL EXPRESS AUTOMAT",
+        "postcode": "TD9 0RA",
+        "B7": 195.7
+      }
+    },
+    "SEAHAM": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS DALTON PARK",
+        "postcode": "SR7 9HU",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS DALTON PARK",
+        "postcode": "SR7 9HU",
+        "B7": 194.9
+      }
+    },
+    "SHEFFIELD": {
+      "station_count": 4,
+      "avg_E10": 167.4,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG HOYLAND COMMON",
+        "postcode": "S74 0DP",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG HOYLAND COMMON",
+        "postcode": "S74 0DP",
+        "B7": 192.9
+      }
+    },
+    "SHREWSBURY": {
+      "station_count": 2,
+      "avg_E10": 172.4,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "MFG MEOLE",
+        "postcode": "SY3 7RE",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG NESSCLIFFE",
+        "postcode": "SY4 1BZ",
+        "B7": 195.9
+      }
+    },
+    "SHROPSHIRE": {
+      "station_count": 26,
+      "avg_E10": 174.7,
+      "avg_B7": 196.7,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK TELFORD",
+        "postcode": "TF118TG",
+        "E10": 191.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK TELFORD",
+        "postcode": "TF118TG",
+        "B7": 211.9
+      }
+    },
+    "SLOUGH": {
+      "station_count": 2,
+      "avg_E10": 172.9,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "GOLDEN CROSS SERVICE STATION",
+        "postcode": "SL3 0JZ",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "GOLDEN CROSS SERVICE STATION",
+        "postcode": "SL3 0JZ",
+        "B7": 195.9
+      }
+    },
+    "SOLIHULL": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG KNOWLE",
+        "postcode": "B93 0JD",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG KNOWLE",
+        "postcode": "B93 0JD",
+        "B7": 194.9
+      }
+    },
+    "SOMERSET": {
+      "station_count": 48,
+      "avg_E10": 175.1,
+      "avg_B7": 197.5,
+      "most_expensive_E10": {
+        "name": "BRIDGWATER SERVICE AREA",
+        "postcode": "TA6 6TS",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "BRIDGWATER SERVICE AREA",
+        "postcode": "TA6 6TS",
+        "B7": 217.9
+      }
+    },
+    "SOMERTON - SOME": {
+      "station_count": 1,
+      "avg_E10": 174.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG LYDFORD",
+        "postcode": "TA11 7EY",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG LYDFORD",
+        "postcode": "TA11 7EY",
+        "B7": 195.9
+      }
+    },
+    "SOUTH AYRSHIRE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MONKTON SF CONNECT",
+        "postcode": "KA9 2RA",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MONKTON SF CONNECT",
+        "postcode": "KA9 2RA",
+        "B7": 189.9
+      }
+    },
+    "SOUTH CAMBRIDGESHIRE": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "GIRTON",
+        "postcode": "CB3 0LQ",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "GIRTON",
+        "postcode": "CB3 0LQ",
+        "B7": 199.9
+      }
+    },
+    "SOUTH GLAMORGAN": {
+      "station_count": 6,
+      "avg_E10": 171.5,
+      "avg_B7": 195.5,
+      "most_expensive_E10": {
+        "name": "MFG PREMIER",
+        "postcode": "CF23 9AE",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PREMIER",
+        "postcode": "CF23 9AE",
+        "B7": 196.9
+      }
+    },
+    "SOUTH GLOUCESTERSHIRE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS YATE",
+        "postcode": "BS37 5PW",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS YATE",
+        "postcode": "BS37 5PW",
+        "B7": 192.9
+      }
+    },
+    "SOUTH HAMS": {
+      "station_count": 1,
+      "avg_E10": 184.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "FRIENDS SERVICE STATION",
+        "postcode": "PL21 0RU",
+        "E10": 184.9
+      },
+      "most_expensive_B7": {
+        "name": "FRIENDS SERVICE STATION",
+        "postcode": "PL21 0RU",
+        "B7": 194.9
+      }
+    },
+    "SOUTH HOLLAND": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "W H BRAND LTD",
+        "postcode": "PE12 0TN",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "W H BRAND LTD",
+        "postcode": "PE12 0TN",
+        "B7": 189.9
+      }
+    },
+    "SOUTH KESTEVEN": {
+      "station_count": 1,
+      "avg_E10": 170.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "ANCASTER SERVICE STATION",
+        "postcode": "NG32 3RT",
+        "E10": 170.9
+      },
+      "most_expensive_B7": {
+        "name": "ANCASTER SERVICE STATION",
+        "postcode": "NG32 3RT",
+        "B7": 194.9
+      }
+    },
+    "SOUTH LANARKSHIRE": {
+      "station_count": 6,
+      "avg_E10": 175.7,
+      "avg_B7": 197.7,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK ABINGTON",
+        "postcode": "ML12 6RG",
+        "E10": 191.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK ABINGTON",
+        "postcode": "ML12 6RG",
+        "B7": 211.9
+      }
+    },
+    "SOUTH LONDON": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG HEXAGON",
+        "postcode": "SE7 7AL",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG HEXAGON",
+        "postcode": "SE7 7AL",
+        "B7": 195.9
+      }
+    },
+    "SOUTH NORFOLK": {
+      "station_count": 1,
+      "avg_E10": 170.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "BROOKE GARAGE LIMITED",
+        "postcode": "NR15 1AB",
+        "E10": 170.9
+      },
+      "most_expensive_B7": {
+        "name": "BROOKE GARAGE LIMITED",
+        "postcode": "NR15 1AB",
+        "B7": 191.9
+      }
+    },
+    "SOUTH SHIELDS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "REDWOOD SERVICES",
+        "postcode": "NE34 9PS",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "REDWOOD SERVICES",
+        "postcode": "NE34 9PS",
+        "B7": 194.9
+      }
+    },
+    "SOUTH STAFFORDSHIRE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": null,
+      "most_expensive_E10": {
+        "name": "HILTON FUELS LTD",
+        "postcode": "WV10 7AD",
+        "E10": 173.9
+      },
+      "most_expensive_B7": null
+    },
+    "SOUTH WIRRALL": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "MFG STRAWBERRY",
+        "postcode": "CH66 2PY",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG STRAWBERRY",
+        "postcode": "CH66 2PY",
+        "B7": 196.9
+      }
+    },
+    "SOUTH YORKS": {
+      "station_count": 1,
+      "avg_E10": 196.9,
+      "avg_B7": 217.9,
+      "most_expensive_E10": {
+        "name": "DONCASTER SERVICE AREA",
+        "postcode": "DN8 5GS",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "DONCASTER SERVICE AREA",
+        "postcode": "DN8 5GS",
+        "B7": 217.9
+      }
+    },
+    "SOUTH YORKSHIRE": {
+      "station_count": 81,
+      "avg_E10": 171.5,
+      "avg_B7": 194.4,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK WOODALL SOUTH FORECOURT",
+        "postcode": "S26 7XR",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK WOODALL SOUTH FORECOURT",
+        "postcode": "S26 7XR",
+        "B7": 214.9
+      }
+    },
+    "SOUTHAMPTON": {
+      "station_count": 2,
+      "avg_E10": 172.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG WOOLSTON",
+        "postcode": "SO19 9AQ",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WOOLSTON",
+        "postcode": "SO19 9AQ",
+        "B7": 196.9
+      }
+    },
+    "SPALDING": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS SPALDING PINCHBECK",
+        "postcode": "PE11 3UG",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS SPALDING PINCHBECK",
+        "postcode": "PE11 3UG",
+        "B7": 189.9
+      }
+    },
+    "SPALDWICK": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK SPALDWICK",
+        "postcode": "PE280TD",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK SPALDWICK",
+        "postcode": "PE280TD",
+        "B7": 193.9
+      }
+    },
+    "STAFFORDSHIRE": {
+      "station_count": 54,
+      "avg_E10": 175.2,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "HILTON PARK SOUTH SERVICE AREA",
+        "postcode": "WV11 2AT",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "HILTON PARK SOUTH SERVICE AREA",
+        "postcode": "WV11 2AT",
+        "B7": 217.9
+      }
+    },
+    "STAINES": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG STANWELL",
+        "postcode": "TW19 7LU",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG STANWELL",
+        "postcode": "TW19 7LU",
+        "B7": 195.9
+      }
+    },
+    "STANMORE": {
+      "station_count": 1,
+      "avg_E10": 172.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS QUEENSBURY",
+        "postcode": "HA7 1EJ",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS QUEENSBURY",
+        "postcode": "HA7 1EJ",
+        "B7": 194.9
+      }
+    },
+    "STANNINGTON MORPETH": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "STANNINGTON SERVICE STATION",
+        "postcode": "NE61 6DR",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "STANNINGTON SERVICE STATION",
+        "postcode": "NE61 6DR",
+        "B7": 195.9
+      }
+    },
+    "STH HUMBERSIDE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG WESTCLIFFE",
+        "postcode": "DN17 2BJ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WESTCLIFFE",
+        "postcode": "DN17 2BJ",
+        "B7": 192.9
+      }
+    },
+    "STILRINGSHIRE": {
+      "station_count": 1,
+      "avg_E10": 196.9,
+      "avg_B7": 217.9,
+      "most_expensive_E10": {
+        "name": "STIRLING SERVICE AREA",
+        "postcode": "FK7 8EU",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "STIRLING SERVICE AREA",
+        "postcode": "FK7 8EU",
+        "B7": 217.9
+      }
+    },
+    "STIRLING": {
+      "station_count": 3,
+      "avg_E10": 167.8,
+      "avg_B7": 193.2,
+      "most_expensive_E10": {
+        "name": "EARLSGATE SF CONNECT",
+        "postcode": "FK3 8XP",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "EARLSGATE SF CONNECT",
+        "postcode": "FK3 8XP",
+        "B7": 197.9
+      }
+    },
+    "STIRLINGSHIRE": {
+      "station_count": 8,
+      "avg_E10": 174.4,
+      "avg_B7": 197.3,
+      "most_expensive_E10": {
+        "name": "SHELL ST NINIANS",
+        "postcode": "FK7 9BH",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG KINCARDINE BRIDGE",
+        "postcode": "FK2 8PF",
+        "B7": 199.9
+      }
+    },
+    "STOCKPORT": {
+      "station_count": 3,
+      "avg_E10": 169.2,
+      "avg_B7": 193.6,
+      "most_expensive_E10": {
+        "name": "REDDISH SERVICE STATION",
+        "postcode": "SK5 7AE",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "REDDISH SERVICE STATION",
+        "postcode": "SK5 7AE",
+        "B7": 194.9
+      }
+    },
+    "STOCKTON-ON-TEES": {
+      "station_count": 2,
+      "avg_E10": 170.4,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "EAGLE SERVICES",
+        "postcode": "TS16 0BQ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "EAGLE SERVICES",
+        "postcode": "TS16 0BQ",
+        "B7": 194.9
+      }
+    },
+    "STOKE-ON-TRENT": {
+      "station_count": 3,
+      "avg_E10": 170.9,
+      "avg_B7": 192.6,
+      "most_expensive_E10": {
+        "name": "EG BADDELEY GREEN PFS",
+        "postcode": "ST2 7HE",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "EG BADDELEY GREEN PFS",
+        "postcode": "ST2 7HE",
+        "B7": 197.9
+      }
+    },
+    "STRANRAER": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "INCH FILLING STATION",
+        "postcode": "DG9 8RY",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "INCH FILLING STATION",
+        "postcode": "DG9 8RY",
+        "B7": 195.9
+      }
+    },
+    "STRATHCLYDE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG BURNSIDE",
+        "postcode": "G73 3RJ",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BURNSIDE",
+        "postcode": "G73 3RJ",
+        "B7": 197.9
+      }
+    },
+    "STROUD": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "FROMEBRIDGE SERVICE STATION",
+        "postcode": "GL2 7PG",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "FROMEBRIDGE SERVICE STATION",
+        "postcode": "GL2 7PG",
+        "B7": 189.9
+      }
+    },
+    "SUFFOLK": {
+      "station_count": 44,
+      "avg_E10": 170.5,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SHELL NEWMARKET",
+        "postcode": "CB8 9AP",
+        "E10": 178.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL NEWMARKET",
+        "postcode": "CB8 9AP",
+        "B7": 199.9
+      }
+    },
+    "SUNDERLAND": {
+      "station_count": 2,
+      "avg_E10": 167.9,
+      "avg_B7": 193.4,
+      "most_expensive_E10": {
+        "name": "MFG CLEADON",
+        "postcode": "SR6 7PQ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CLEADON",
+        "postcode": "SR6 7PQ",
+        "B7": 194.9
+      }
+    },
+    "SURREY": {
+      "station_count": 114,
+      "avg_E10": 174.9,
+      "avg_B7": 197.4,
+      "most_expensive_E10": {
+        "name": "SHELL COBHAM",
+        "postcode": "KT11 3JS",
+        "E10": 189.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG EWELL",
+        "postcode": "KT19 9EY",
+        "B7": 203.9
+      }
+    },
+    "SUSSEX": {
+      "station_count": 6,
+      "avg_E10": 172.1,
+      "avg_B7": 197.1,
+      "most_expensive_E10": {
+        "name": "MFG WESTERGATE",
+        "postcode": "PO20 3UN",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG WOODINGDEAN",
+        "postcode": "BN2 6ND",
+        "B7": 199.9
+      }
+    },
+    "SWANSEA": {
+      "station_count": 8,
+      "avg_E10": 171.6,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "EG MORRISTON PFS",
+        "postcode": "SA6 8EF",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CONWAY (SWANSEA)",
+        "postcode": "SA5 8AQ",
+        "B7": 195.9
+      }
+    },
+    "SWINDON": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MFG PENHILL",
+        "postcode": "SN2 7AS",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG PENHILL",
+        "postcode": "SN2 7AS",
+        "B7": 199.9
+      }
+    },
+    "TAMESIDE": {
+      "station_count": 1,
+      "avg_E10": 165.9,
+      "avg_B7": 187.9,
+      "most_expensive_E10": {
+        "name": "CAROLINE SERVICE STATION",
+        "postcode": "SK15 1PD",
+        "E10": 165.9
+      },
+      "most_expensive_B7": {
+        "name": "CAROLINE SERVICE STATION",
+        "postcode": "SK15 1PD",
+        "B7": 187.9
+      }
+    },
+    "TAYSIDE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "TGC - ST JOHNSTONE",
+        "postcode": "PH1 5RG",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - ST JOHNSTONE",
+        "postcode": "PH1 5RG",
+        "B7": 193.9
+      }
+    },
+    "TELFORD": {
+      "station_count": 3,
+      "avg_E10": 173.2,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG KETLEY",
+        "postcode": "TF1 5DY",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WALKERS CLOCK",
+        "postcode": "TF2 8JY",
+        "B7": 196.9
+      }
+    },
+    "TEST VALLEY": {
+      "station_count": 2,
+      "avg_E10": 172.4,
+      "avg_B7": 198.4,
+      "most_expensive_E10": {
+        "name": "BADDESLEY",
+        "postcode": "SO52 9DU",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "BADDESLEY",
+        "postcode": "SO52 9DU",
+        "B7": 201.9
+      }
+    },
+    "TEWKESBURY": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "PJ NICHOLLS LTD TEWKESBURY",
+        "postcode": "GL20 8DT",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "PJ NICHOLLS LTD TEWKESBURY",
+        "postcode": "GL20 8DT",
+        "B7": 193.9
+      }
+    },
+    "THANET DISTRICT": {
+      "station_count": 1,
+      "avg_E10": 168.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "BROOKSEND SERVICE STATION LTD",
+        "postcode": "CT7 0JW",
+        "E10": 168.9
+      },
+      "most_expensive_B7": {
+        "name": "BROOKSEND SERVICE STATION LTD",
+        "postcode": "CT7 0JW",
+        "B7": 191.9
+      }
+    },
+    "TINGEWICK": {
+      "station_count": 1,
+      "avg_E10": null,
+      "avg_B7": null,
+      "most_expensive_E10": null,
+      "most_expensive_B7": null
+    },
+    "TORRIDGE": {
+      "station_count": 2,
+      "avg_E10": 169.3,
+      "avg_B7": 194.8,
+      "most_expensive_E10": {
+        "name": "W.SANDERS & SONS LTD",
+        "postcode": "EX22 7NU",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "W.SANDERS & SONS LTD",
+        "postcode": "EX22 7NU",
+        "B7": 195.9
+      }
+    },
+    "TRANENT": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "TRANENT SERVICE STATION",
+        "postcode": "EH33 1NF",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "TRANENT SERVICE STATION",
+        "postcode": "EH33 1NF",
+        "B7": 193.9
+      }
+    },
+    "TYNE & WEAR": {
+      "station_count": 24,
+      "avg_E10": 170.7,
+      "avg_B7": 194.6,
+      "most_expensive_E10": {
+        "name": "MFG LOBLEY HILL",
+        "postcode": "NE11 0UH",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG SWALLOW",
+        "postcode": "NE8 4BL",
+        "B7": 199.9
+      }
+    },
+    "TYNE AND WEAR": {
+      "station_count": 24,
+      "avg_E10": 170.5,
+      "avg_B7": 193.7,
+      "most_expensive_E10": {
+        "name": "SHELL GOSFORTH",
+        "postcode": "NE3 2DT",
+        "E10": 176.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL REDHEUGH BRIDGE",
+        "postcode": "NE8 2JX",
+        "B7": 199.9
+      }
+    },
+    "TYNE&WEAR": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "FOUR ACES FILLING STATION",
+        "postcode": "NE10 8YB",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "FOUR ACES FILLING STATION",
+        "postcode": "NE10 8YB",
+        "B7": 193.9
+      }
+    },
+    "UXBRIDGE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG SWAKELEYS",
+        "postcode": "UB10 8TA",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG SWAKELEYS",
+        "postcode": "UB10 8TA",
+        "B7": 193.9
+      }
+    },
+    "VALE OF WHITE HORSE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "VINEYARD",
+        "postcode": "OX14 3PB",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "VINEYARD",
+        "postcode": "OX14 3PB",
+        "B7": 197.9
+      }
+    },
+    "W.SUSSEX": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "ANSTY CROSS",
+        "postcode": "RH17 5AG",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "ANSTY CROSS",
+        "postcode": "RH17 5AG",
+        "B7": 195.9
+      }
+    },
+    "WAKEFIELD": {
+      "station_count": 3,
+      "avg_E10": 168.6,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "NEWTON HILL SERVICE STATION",
+        "postcode": "WF1 2JQ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "SOUTH ELMSALL S STN",
+        "postcode": "WF9 2PH",
+        "B7": 194.9
+      }
+    },
+    "WALSALL": {
+      "station_count": 2,
+      "avg_E10": 173.4,
+      "avg_B7": 195.9,
+      "most_expensive_E10": {
+        "name": "MFG BLOXWICH",
+        "postcode": "WS3 2TZ",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BLOXWICH",
+        "postcode": "WS3 2TZ",
+        "B7": 195.9
+      }
+    },
+    "WARKS": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "RONTEC WOODWAY",
+        "postcode": "CV2 2EU",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "RONTEC WOODWAY",
+        "postcode": "CV2 2EU",
+        "B7": 193.9
+      }
+    },
+    "WARRINGTON": {
+      "station_count": 3,
+      "avg_E10": 167.6,
+      "avg_B7": 190.6,
+      "most_expensive_E10": {
+        "name": "MFG OAKWOOD GATE",
+        "postcode": "WA3 6RW",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG OAKWOOD GATE",
+        "postcode": "WA3 6RW",
+        "B7": 192.9
+      }
+    },
+    "WARWICKSHIRE": {
+      "station_count": 36,
+      "avg_E10": 176.3,
+      "avg_B7": 198.5,
+      "most_expensive_E10": {
+        "name": "RUGBY SERVICE AREA",
+        "postcode": "CV23 0EZ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "RUGBY SERVICE AREA",
+        "postcode": "CV23 0EZ",
+        "B7": 217.9
+      }
+    },
+    "WELLS": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS WELLS",
+        "postcode": "BA5 1SQ",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS WELLS",
+        "postcode": "BA5 1SQ",
+        "B7": 193.9
+      }
+    },
+    "WEST BERKSHIRE": {
+      "station_count": 2,
+      "avg_E10": 194.9,
+      "avg_B7": 214.9,
+      "most_expensive_E10": {
+        "name": "WELCOME BREAK MEMBURY EAST",
+        "postcode": "RG17 7TZ",
+        "E10": 194.9
+      },
+      "most_expensive_B7": {
+        "name": "WELCOME BREAK MEMBURY EAST",
+        "postcode": "RG17 7TZ",
+        "B7": 214.9
+      }
+    },
+    "WEST DUNBARTONSHIRE": {
+      "station_count": 1,
+      "avg_E10": 173.9,
+      "avg_B7": 199.9,
+      "most_expensive_E10": {
+        "name": "MILTON SF CONNECT",
+        "postcode": "G82 2TN",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "MILTON SF CONNECT",
+        "postcode": "G82 2TN",
+        "B7": 199.9
+      }
+    },
+    "WEST GLAMORGAN": {
+      "station_count": 9,
+      "avg_E10": 175.8,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "SWANSEA SERVICE AREA",
+        "postcode": "SA4 9GT",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "SWANSEA SERVICE AREA",
+        "postcode": "SA4 9GT",
+        "B7": 217.9
+      }
+    },
+    "WEST LOTHIAN": {
+      "station_count": 20,
+      "avg_E10": 173.6,
+      "avg_B7": 196.9,
+      "most_expensive_E10": {
+        "name": "SHELL CO-OP LIZZIE BRICE",
+        "postcode": "EH54 6LN",
+        "E10": 179.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG GLENDEVON",
+        "postcode": "EH52 6PX",
+        "B7": 199.9
+      }
+    },
+    "WEST MIDLANDS": {
+      "station_count": 132,
+      "avg_E10": 172.9,
+      "avg_B7": 195.7,
+      "most_expensive_E10": {
+        "name": "FRANKLEY SOUTH SERVICE AREA",
+        "postcode": "B32 4AR",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "FRANKLEY SOUTH SERVICE AREA",
+        "postcode": "B32 4AR",
+        "B7": 217.9
+      }
+    },
+    "WEST NORTHAMPTONSHIRE": {
+      "station_count": 2,
+      "avg_E10": 169.4,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "KINGSTHORPE MOTOR COMPANY",
+        "postcode": "NN2 8AG",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "KINGSTHORPE MOTOR COMPANY",
+        "postcode": "NN2 8AG",
+        "B7": 194.9
+      }
+    },
+    "WEST OXFORDSHIRE": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 194.9,
+      "most_expensive_E10": {
+        "name": "GULF",
+        "postcode": "OX29 8BJ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "GULF",
+        "postcode": "OX29 8BJ",
+        "B7": 194.9
+      }
+    },
+    "WEST SUSSEX": {
+      "station_count": 44,
+      "avg_E10": 173.5,
+      "avg_B7": 196.5,
+      "most_expensive_E10": {
+        "name": "PEASE POTTAGE SERVICE AREA",
+        "postcode": "RH11 9YA",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "PEASE POTTAGE SERVICE AREA",
+        "postcode": "RH11 9YA",
+        "B7": 217.9
+      }
+    },
+    "WEST YORKS": {
+      "station_count": 1,
+      "avg_E10": 196.9,
+      "avg_B7": 217.9,
+      "most_expensive_E10": {
+        "name": "FERRYBRIDGE SERVICE AREA",
+        "postcode": "WF11 0AF",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "FERRYBRIDGE SERVICE AREA",
+        "postcode": "WF11 0AF",
+        "B7": 217.9
+      }
+    },
+    "WEST YORKSHIRE": {
+      "station_count": 85,
+      "avg_E10": 170.7,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "SKELTON LAKE SERVICES",
+        "postcode": "LS9 0AS",
+        "E10": 181.9
+      },
+      "most_expensive_B7": {
+        "name": "SHELL CO-OP POOL BRIDGE",
+        "postcode": "LS21 1EQ",
+        "B7": 199.9
+      }
+    },
+    "WEST YOURKSIRE": {
+      "station_count": 1,
+      "avg_E10": 164.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "ESSAR WHARRELS SERVICE STATION",
+        "postcode": "LS28 7AA",
+        "E10": 164.9
+      },
+      "most_expensive_B7": {
+        "name": "ESSAR WHARRELS SERVICE STATION",
+        "postcode": "LS28 7AA",
+        "B7": 189.9
+      }
+    },
+    "WESTON-SUPER-MARE": {
+      "station_count": 1,
+      "avg_E10": 175.9,
+      "avg_B7": 197.9,
+      "most_expensive_E10": {
+        "name": "MFG WESTON SUPER MARE",
+        "postcode": "BS24 8FN",
+        "E10": 175.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG WESTON SUPER MARE",
+        "postcode": "BS24 8FN",
+        "B7": 197.9
+      }
+    },
+    "WHITBY": {
+      "station_count": 1,
+      "avg_E10": 167.9,
+      "avg_B7": 190.9,
+      "most_expensive_E10": {
+        "name": "FYLINGDALES SERVICE STATION",
+        "postcode": "YO22 4QH",
+        "E10": 167.9
+      },
+      "most_expensive_B7": {
+        "name": "FYLINGDALES SERVICE STATION",
+        "postcode": "YO22 4QH",
+        "B7": 190.9
+      }
+    },
+    "WIDNES": {
+      "station_count": 1,
+      "avg_E10": 166.9,
+      "avg_B7": 189.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS WIDNES",
+        "postcode": "WA8 6UA",
+        "E10": 166.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS WIDNES",
+        "postcode": "WA8 6UA",
+        "B7": 189.9
+      }
+    },
+    "WIGAN": {
+      "station_count": 2,
+      "avg_E10": 169.4,
+      "avg_B7": 192.9,
+      "most_expensive_E10": {
+        "name": "MFG CROW ORCHARD",
+        "postcode": "WN6 9RB",
+        "E10": 174.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG CROW ORCHARD",
+        "postcode": "WN6 9RB",
+        "B7": 199.9
+      }
+    },
+    "WIGTOWNSHIRE": {
+      "station_count": 1,
+      "avg_E10": 169.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG MORRISONS STRANRAER",
+        "postcode": "DG9 8ES",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG MORRISONS STRANRAER",
+        "postcode": "DG9 8ES",
+        "B7": 193.9
+      }
+    },
+    "WILTSHIRE": {
+      "station_count": 49,
+      "avg_E10": 174.4,
+      "avg_B7": 197.6,
+      "most_expensive_E10": {
+        "name": "LEIGH DELAMERE WEST SERVICE AREA",
+        "postcode": "SN14 6LB",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "LEIGH DELAMERE WEST SERVICE AREA",
+        "postcode": "SN14 6LB",
+        "B7": 217.9
+      }
+    },
+    "WIRRAL": {
+      "station_count": 2,
+      "avg_E10": 172.4,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "BP HARVEST ENERGY OVERPOOL",
+        "postcode": "CH66 2JF",
+        "E10": 172.9
+      },
+      "most_expensive_B7": {
+        "name": "BP HARVEST ENERGY OVERPOOL",
+        "postcode": "CH66 2JF",
+        "B7": 196.9
+      }
+    },
+    "WIRREL": {
+      "station_count": 1,
+      "avg_E10": 170.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG BEBINGTON",
+        "postcode": "CH63 7LQ",
+        "E10": 170.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BEBINGTON",
+        "postcode": "CH63 7LQ",
+        "B7": 193.9
+      }
+    },
+    "WOLVERHAMPTON": {
+      "station_count": 3,
+      "avg_E10": 170.6,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "TGC - WOMBOURNE",
+        "postcode": "WV5 9ED",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "TGC - WOMBOURNE",
+        "postcode": "WV5 9ED",
+        "B7": 194.9
+      }
+    },
+    "WORCESTER": {
+      "station_count": 2,
+      "avg_E10": 172.9,
+      "avg_B7": 195.4,
+      "most_expensive_E10": {
+        "name": "PGG ELBURY PARK",
+        "postcode": "WR4 9BA",
+        "E10": 173.9
+      },
+      "most_expensive_B7": {
+        "name": "PGG ELBURY PARK",
+        "postcode": "WR4 9BA",
+        "B7": 195.9
+      }
+    },
+    "WORCESTERSHIRE": {
+      "station_count": 31,
+      "avg_E10": 173.6,
+      "avg_B7": 195.6,
+      "most_expensive_E10": {
+        "name": "STRENSHAM MWSA CONNECT",
+        "postcode": "WR8 9LJ",
+        "E10": 193.9
+      },
+      "most_expensive_B7": {
+        "name": "STRENSHAM MWSA CONNECT",
+        "postcode": "WR8 9LJ",
+        "B7": 213.9
+      }
+    },
+    "WREXHAM": {
+      "station_count": 2,
+      "avg_E10": 170.9,
+      "avg_B7": 193.9,
+      "most_expensive_E10": {
+        "name": "MFG BEECHLEY",
+        "postcode": "LL13 8NH",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "MFG BEECHLEY",
+        "postcode": "LL13 8NH",
+        "B7": 193.9
+      }
+    },
+    "WYCHAVON": {
+      "station_count": 1,
+      "avg_E10": 171.9,
+      "avg_B7": 191.9,
+      "most_expensive_E10": {
+        "name": "PJ NICHOLLS LTD PERSHORE",
+        "postcode": "WR10 2DJ",
+        "E10": 171.9
+      },
+      "most_expensive_B7": {
+        "name": "PJ NICHOLLS LTD PERSHORE",
+        "postcode": "WR10 2DJ",
+        "B7": 191.9
+      }
+    },
+    "YORK": {
+      "station_count": 5,
+      "avg_E10": 168.9,
+      "avg_B7": 192.5,
+      "most_expensive_E10": {
+        "name": "HULL ROAD FILLING STATION",
+        "postcode": "YO19 5RY",
+        "E10": 169.9
+      },
+      "most_expensive_B7": {
+        "name": "HULL ROAD SERVICE STATION",
+        "postcode": "YO10 3LE",
+        "B7": 193.9
+      }
+    },
+    "YORKSHIRE": {
+      "station_count": 14,
+      "avg_E10": 177.9,
+      "avg_B7": 200.5,
+      "most_expensive_E10": {
+        "name": "WOOLLEY EDGE NORTHSERVICE AREA",
+        "postcode": "WF4 4LQ",
+        "E10": 196.9
+      },
+      "most_expensive_B7": {
+        "name": "WOOLLEY EDGE NORTHSERVICE AREA",
+        "postcode": "WF4 4LQ",
+        "B7": 217.9
+      }
+    }
+  },
   "stations": [
     {
       "node_id": "4882e3fee979cfefa29a8777ce57ca0ecea27b4f12ba7fb538ed0855d6b0af1c",
